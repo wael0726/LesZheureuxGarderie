@@ -2,14 +2,15 @@
 import Head from 'next/head';
 
 export default function Page() {
-  return (
-    <>
-      <Head>
-        <title>Index - ABC Tots</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
-      <div dangerouslySetInnerHTML={ { __html: `<!DOCTYPE html>
+   return (
+      <>
+         <Head>
+            <title>Index - ABC Tots</title>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         </Head>
+         <div dangerouslySetInnerHTML={{
+  __html: `<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
@@ -98,11 +99,14 @@ export default function Page() {
             <!-- End Top bar --> 
             <!-- Navbar Starts -->
             <div class="navbar container-fluid">
-               <div class="container ">
-                  <!-- logo -->
-                  <a class="nav-brand" href="index.html">
-                  <img src="img/logo.png" alt="" class="img-fluid">
-                  </a>
+               <div class="container d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center">
+      <a class="nav-brand" href="/">
+        <img src="/img/logoZrm.png" alt="Logo" style="height: 100px !important;" class="img-fluid me-2">
+      </a>
+      <!-- titre -->
+      <span style="font-size: 1.8rem; font-weight: bold; color: #28a745;">Les Z'heureux</span>
+    </div>
                   <!-- Navbar toggler -->
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggle-icon">
@@ -111,70 +115,39 @@ export default function Page() {
                   </button>
                   <div class="collapse navbar-collapse" id="navbarResponsive">
                      <ul class="navbar-nav ms-auto">
-                        <!-- menu item -->
-                        <li class="nav-item home-menu">
-                           <a class="nav-link" href="index.html">Home
-                           </a>
+                        <!-- menu item - Home -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/">Home</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="services-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Services
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="services-dropdown">
-                              <a class="dropdown-item" href="services.html">Services Style 1</a>
-                              <a class="dropdown-item" href="services2.html">Services Style 2</a>
-                              <a class="dropdown-item" href="services-single.html">Services Single</a>
-                           </div>
+                        
+                        <!-- menu item - Services -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/services">Services</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="about-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           About
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="about-dropdown">
-                              <a class="dropdown-item" href="about.html">About Style 1</a>
-                              <a class="dropdown-item" href="about2.html">About Style 2</a>
-                              <a class="dropdown-item" href="team.html">Our Team</a>
-                              <a class="dropdown-item" href="team-single.html">Team Single Page</a>
-                              <a class="dropdown-item" href="careers.html">Careers</a>
-                              <a class="dropdown-item" href="pricing.html">Pricing</a>
-                           </div>
+                        
+                        <!-- menu item - About -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/about">About</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="gallery-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Gallery
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="gallery-dropdown">
-                              <a class="dropdown-item" href="gallery.html">Gallery Style 1</a>
-                              <a class="dropdown-item" href="gallery2.html">Gallery Style 2</a>
-                              <a class="dropdown-item" href="gallery3.html">Gallery Style 3</a>
-                           </div>
+                        
+                        <!-- menu item - Our Team -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/team">Our Team</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="contact-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Contact
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="contact-dropdown">
-                              <a class="dropdown-item" href="contact.html">Contact Style 1</a>
-                              <a class="dropdown-item" href="contact2.html">Contact Style 2</a>
-                              <a class="dropdown-item" href="contact3.html">Contact Style 3</a>
-                           </div>
+                        
+                        <!-- menu item - Careers -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/careers">Careers</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="others-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Other pages
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="others-dropdown">
-                              <a class="dropdown-item" href="blog.html">Blog Home 1</a>
-                              <a class="dropdown-item" href="blog2.html">Blog Home 2</a>
-                              <a class="dropdown-item" href="blog-single.html">Blog Single</a>
-                              <a class="dropdown-item" href="elements.html">Elements Page</a>
-                              <a class="dropdown-item" href="404.html">404 Page</a>
-                           </div>
+                        
+                        <!-- menu item - Pricing -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/pricing">Pricing</a>
+                        </li>
+                        
+                        <!-- menu item - Contact -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/contact">Contact</a>
                         </li>
                      </ul>
                      <!--/ul -->
@@ -209,8 +182,8 @@ export default function Page() {
                   <!-- text  -->
                   <div class="ls-l header-wrapper" data-ls="offsetyin:150; durationin:700; delayin:200; easingin:easeOutQuint; rotatexin:20; scalexin:1.4; offsetyout:600; durationout:400;">
                      <div class="header-text">
-                        <span>Welcome to</span> 
-                        <h1> ABC TOTS</h1>
+                        <span>Bienvenue à la garderie</span> 
+                        <h1> Les Z'heureux</h1>
                         <!--the div below is hidden on small screens  -->
                         <div class="hidden-small">
                            <p class="header-p">We offer high quality Daycare Services, contact us or visit us today for more information</p>
@@ -908,306 +881,11 @@ export default function Page() {
             <!-- /row-->
          </section>
          <!-- /section ends-->
-         <!-- section --> 
-         <section id="gallery-home" class="container-fluid bg-tertiary no-bg-sm">
-            <div class="container">
-               <!-- section heading -->  
-               <div class="section-heading text-center text-light">
-                  <h2>Gallery</h2>
-                  <p class="subtitle">Our facilities</p>
-               </div>
-               <!-- /section-heading -->
-               <!-- centered Gallery navigation -->
-               <ul class="nav nav-pills category-isotope center-nav">
-                  <li class="nav-item">
-                     <a class="nav-link active" href="#" data-toggle="tab" data-filter="*">All</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#" data-toggle="tab" data-filter=".school">Our School</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#" data-toggle="tab" data-filter=".activities">Activities</a>
-                  </li>
-               </ul>
-               <!-- /ul -->
-               <!-- Gallery -->
-               <div id="gallery-isotope" class="row mt-5 magnific-popup">
-                  <!-- Image 1 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 activities">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery1.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery1.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 2 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery2.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery2.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 3 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery3.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery3.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 4 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 activities">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery4.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery4.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 5 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery5.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery5.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 6 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery6.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery6.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 7 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 activities">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery7.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery7.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 8 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 activities">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery8.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery8.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 9 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery9.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery9.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 10 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery10.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery10.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 11 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery11.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery11.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-                  <!-- Image 12 -->
-                  <div class="col-sm-6 col-md-6 col-lg-4 school">
-                     <div class="portfolio-item">
-                        <div class="gallery-thumb">
-                           <img class="img-fluid " src="img/gallery/gallery12.jpg" alt="">
-                           <span class="overlay-mask"></span>
-                           <a href="img/gallery/gallery12.jpg" class="link centered" title="You can add caption to pictures.">
-                           <i class="fa fa-expand"></i></a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <!-- /gallery-isotope-->	   
+            
             </div>
             <!-- /container-->
          </section>
          <!-- /section ends -->
-         <!-- section -->
-         <section id="blogprev-home" data-100-bottom="background-position: 0% 120%;"
-            data-top-bottom="background-position: 0% 100%;">
-            <div class="container">
-               <!-- section heading -->  
-               <div class="section-heading text-center">
-                  <h2>Latest Blog Posts</h2>
-                  <p class="subtitle">Our Updates</p>
-               </div>
-               <!-- /section-heading -->
-               <!-- blog carousel -->
-               <div class="carousel-3items owl-carousel owl-theme mt-0">
-                  <!-- blog-box -->
-                  <div class="blog-box">
-                     <!-- image -->
-                     <a href="blog-single.html">
-                        <div class="image"><img src="img/blog/blogstyle2-1.jpg" alt=""></div>
-                     </a>
-                     <!-- blog-box-caption -->
-                     <div class="blog-box-caption">
-                        <!-- date -->
-                        <div class="date"><span class="day">12</span><span class="month">May</span></div>
-                        <a href="blog-single.html">
-                           <h4>Helping Your Child with Socialization</h4>
-                        </a>
-                        <!-- /link -->
-                        <p>
-                           Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-                        </p>
-                     </div>
-                     <!-- blog-box-footer -->
-                     <div class="blog-box-footer">
-                        <div class="author">Posted by<a href="#"><i class="fas fa-user"></i>Lauren Smith</a></div>
-                        <div class="comments"><a href="blog-single.html"><i class="fas fa-comment"></i>23</a></div>
-                        <!-- Button -->	 
-                        <div class="text-center col-md-12">
-                           <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-                        </div>
-                     </div>
-                     <!-- /blog-box-footer -->
-                  </div>
-                  <!-- /blog-box -->
-                  <!-- blog-box -->
-                  <div class="blog-box">
-                     <!-- image -->
-                     <a href="blog-single.html">
-                        <div class="image"><img src="img/blog/blogstyle2-2.jpg" alt=""></div>
-                     </a>
-                     <!-- blog-box-caption -->
-                     <div class="blog-box-caption">
-                        <!-- date -->
-                        <div class="date"><span class="day">28</span><span class="month">June</span></div>
-                        <a href="blog-single.html">
-                           <h4>Our Healthy meals that toddlers love</h4>
-                        </a>
-                        <!-- /link -->
-                        <p>
-                           Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-                        </p>
-                     </div>
-                     <!-- blog-box-footer -->
-                     <div class="blog-box-footer">
-                        <div class="author">Posted by<a href="#"><i class="fas fa-user"></i>Jonas Doe</a></div>
-                        <div class="comments"><a href="blog-single.html"><i class="fas fa-comment"></i>5</a></div>
-                        <!-- Button -->	 
-                        <div class="text-center col-md-12">
-                           <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-                        </div>
-                     </div>
-                     <!-- /blog-box-footer -->
-                  </div>
-                  <!-- /blog-box -->
-                  <!-- blog-box -->
-                  <div class="blog-box">
-                     <!-- image -->
-                     <a href="blog-single.html">
-                        <div class="image"><img src="img/blog/blogstyle2-3.jpg" alt=""></div>
-                     </a>
-                     <!-- blog-box-caption -->
-                     <div class="blog-box-caption">
-                        <!-- date -->
-                        <div class="date"><span class="day">02</span><span class="month">July</span></div>
-                        <a href="blog-single.html">
-                           <h4>20 Fun Activities to Do With Your Kids</h4>
-                        </a>
-                        <!-- /link -->
-                        <p>
-                           Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-                        </p>
-                     </div>
-                     <!-- blog-box-footer -->
-                     <div class="blog-box-footer">
-                        <div class="author">Posted by<a href="#"><i class="fas fa-user"></i>Lauren Smith</a></div>
-                        <div class="comments"><a href="blog-single.html"><i class="fas fa-comment"></i>10</a></div>
-                        <!-- Button -->	 
-                        <div class="text-center col-md-12">
-                           <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-                        </div>
-                     </div>
-                     <!-- /blog-box-footer -->
-                  </div>
-                  <!-- /blog-box -->
-                  <!-- blog-box -->
-                  <div class="blog-box">
-                     <!-- image -->
-                     <a href="blog-single.html">
-                        <div class="image"><img src="img/blog/blogstyle2-4.jpg" alt=""></div>
-                     </a>
-                     <!-- blog-box-caption -->
-                     <div class="blog-box-caption">
-                        <!-- date -->
-                        <div class="date"><span class="day">18</span><span class="month">June</span></div>
-                        <a href="blog-single.html">
-                           <h4>Brain-Boosting Activities for Children</h4>
-                        </a>
-                        <!-- /link -->
-                        <p>
-                           Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis...
-                        </p>
-                     </div>
-                     <!-- blog-box-footer -->
-                     <div class="blog-box-footer">
-                        <div class="author">Posted by<a href="#"><i class="fas fa-user"></i>Jonas Doe</a></div>
-                        <div class="comments"><a href="blog-single.html"><i class="fas fa-comment"></i>11</a></div>
-                        <!-- Button -->	 
-                        <div class="text-center col-md-12">
-                           <a href="blog-single.html" class="btn btn-primary ">Read more</a>
-                        </div>
-                     </div>
-                     <!-- /blog-box-footer -->
-                  </div>
-                  <!-- /blog-box -->
-               </div>
-               <!-- /owl-carousel -->
-            </div>
-            <!-- /container -->
-         </section>
-         <!-- /section ends-->
          <!-- section -->		   
          <section id="callout" class=" container-fluid bg-fixed">
             <div class="container">
@@ -1454,7 +1132,7 @@ export default function Page() {
       <script src="vendor/layerslider/js/layerslider.kreaturamedia.jquery.js"></script>
       <script src="vendor/layerslider/js/layerslider.load.js"></script>
    </body>
-</html>` } } />
-    </>
-  );
+</html>` }} />
+      </>
+   );
 }

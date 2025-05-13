@@ -111,7 +111,7 @@ export default function Page() {
                      <ul class="navbar-nav ms-auto">
                         <!-- menu item -->
                         <li class="nav-item home-menu">
-                           <a class="nav-link" href="index.html">Home
+                           <a class="nav-link" href="/">Home
                            </a>
                         </li>
                         <!-- menu item -->
