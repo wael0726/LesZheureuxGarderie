@@ -4,20 +4,20 @@ import Head from 'next/head';
 import { useCustomCursor } from '../../public/js/UseCustomCursor';
 
 export default function Page() {
-  useEffect(() => {
-    const { initCustomCursor } = useCustomCursor();
-    initCustomCursor();
-  }, []); // Cette fonction ne se déclenche qu'une seule fois, à l'initialisation du composant
+   useEffect(() => {
+      const { initCustomCursor } = useCustomCursor();
+      initCustomCursor();
+   }, []); // Cette fonction ne se déclenche qu'une seule fois, à l'initialisation du composant
 
-  return (
-    <>
-      <Head>
-        <title>Acceuil - Garderie Les Z'Heureux</title>
-        <meta charSet="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      </Head>
+   return (
+      <>
+         <Head>
+            <title>Acceuil - Garderie Les Z'Heureux</title>
+            <meta charSet="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+         </Head>
          <div dangerouslySetInnerHTML={{
-  __html: `<!DOCTYPE html>
+            __html: `<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
@@ -894,62 +894,45 @@ Je recommande à 100%!!!
                </div>
                <!-- /col-lg-->
                <!--notepad -->
-               <div class="col-lg-12 mt-5 block-padding force notepad pl-5 pr-5" style="position: relative; z-index: 1;">
-    <!-- Style d'urgence intégré -->
-    <style>
-        .input-field, .textarea-field {
-            pointer-events: auto !important;
-            opacity: 1 !important;
-            position: relative;
-            z-index: 9999 !important;
-            background: white !important;
-        }
-        
-        .notepad::before,
-        .block-padding::after {
-            display: none !important;
-        }
-    </style>
+               <!-- CDN EmailJS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
+<script type="text/javascript">
+  (function() {
+    // Initialiser EmailJS avec la nouvelle méthode d'initialisation
+    emailjs.init("swf70I3j-nFvFNFlH");  // Remplace par ta clé publique
+  })();
+</script>
+
+
+<!-- FORMULAIRE -->
+<div class="col-lg-12 mt-5 block-padding force notepad pl-5 pr-5" style="position: relative; z-index: 1;">
     <div class="row">
         <div class="col-lg-7">
             <h4>Envoyez-nous un message</h4>
-            <form action="mailto:Leszheureuxgarderie@gmail.com" method="post" enctype="text/plain">
+            <form id="contact-form" onsubmit="submitForm(event)">
                 <div class="form-group">
                     <div class="row">
                         <div class="col-md-6">
                             <label for="name">Nom<span class="required">*</span></label>
-                            <input type="text" id="name" name="name" 
-                                   class="form-control input-field"
-                                   style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000;" 
-                                   required>
+                            <input type="text" id="name" name="name" class="form-control input-field" required>
                         </div>
                         <div class="col-md-6">
                             <label for="email">Adresse E-mail <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" 
-                                   class="form-control input-field"
-                                   style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000;"
-                                   required>
+                            <input type="email" id="email" name="email" class="form-control input-field" required>
                         </div>
                     </div>
                     <div class="row mt-2">
                         <div class="col-md-12">
                             <label for="subject">Sujet</label>
-                            <input type="text" id="subject" name="subject" 
-                                   class="form-control input-field"
-                                   style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000;">
+                            <input type="text" id="subject" name="subject" class="form-control input-field">
                         </div>
                         <div class="col-md-12 mt-2">
                             <label for="message">Message<span class="required">*</span></label>
-                            <textarea name="message" id="message" 
-                                      class="textarea-field form-control"
-                                      style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000; resize: vertical;"
-                                      rows="3" required></textarea>
+                            <textarea name="message" id="message" class="textarea-field form-control" rows="3" required></textarea>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-tertiary mt-3" style="z-index: 10000; position: relative;">
-                        Envoyer le message
-                    </button>
+                    <button type="submit" class="btn btn-tertiary mt-3">Envoyer le message</button>
                 </div>
             </form>
         </div>
@@ -957,11 +940,32 @@ Je recommande à 100%!!!
         <div class="col-lg-5">
             <div id="map-canvas" class="mt-5 rounded" style="z-index: 0;"></div>
         </div>
-
-        <!-- Correction de l'ornement -->
-        <div class="ornament-stars mt-8 d-none d-md-block" data-aos="zoom-out" style="pointer-events: none; z-index: 0 !important;"></div>
     </div>
 </div>
+
+<!-- SCRIPT D'ENVOI -->
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+
+        const params = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            subject: document.getElementById("subject").value,
+            message: document.getElementById("message").value,
+        };
+
+        emailjs.send("service_leszheureux", "template_leszheureux", params)
+            .then(function(response) {
+                alert("Message envoyé avec succès !");
+                document.getElementById("contact-form").reset();
+            }, function(error) {
+                console.error("Échec de l'envoi :", error);
+                alert("Erreur lors de l'envoi du message.");
+            });
+    }
+</script>
+
 
                <!-- /col-lg-->
             </div>
