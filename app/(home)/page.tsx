@@ -147,7 +147,7 @@ export default function Page() {
                   <!-- sun  -->
                   <img  src="img/slider/parallaxslider/sun.png" class="ls-l" alt="" style="top:-190px;left:650px;" data-ls="parallax:true; parallaxlevel:-3;">
                   <!--child image  -->
-                  <img  src="img/slider/parallaxslider1.png" class="ls-l" alt="" style="top:166px;left:520px;" data-ls="offsetxin:10; offsetyin:120; durationin:1100; rotatein:5; transformoriginin:59.3% 80.3% 0; offsetxout:-80; durationout:400; parallax:true; parallaxlevel:10;">
+                  <img  src="img/slider/lz2.png" class="ls-l" alt="" style="top:166px;left:520px;" data-ls="offsetxin:10; offsetyin:120; durationin:1100; rotatein:5; transformoriginin:59.3% 80.3% 0; offsetxout:-80; durationout:400; parallax:true; parallaxlevel:10;">
                   <!-- text  -->
                   <div class="ls-l header-wrapper" data-ls="offsetyin:150; durationin:700; delayin:200; easingin:easeOutQuint; rotatexin:20; scalexin:1.4; offsetyout:600; durationout:400;">
                      <div class="header-text">
@@ -192,7 +192,7 @@ export default function Page() {
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
-                        <img class="card-img" src="img/intro1.jpg" alt="">
+                        <img class="card-img" src="img/lz6.avif" alt="">
                      </div>
                      <!-- /card -->
                      <!-- back of card -->  			
@@ -230,7 +230,7 @@ export default function Page() {
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
-                        <img class="card-img" src="img/intro2.jpg" alt="">
+                        <img class="card-img" src="img/lz3.jpg" alt="">
                      </div>
                      <!-- /card -->
                      <!-- back of card -->  			
@@ -268,7 +268,7 @@ export default function Page() {
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
-                        <img class="card-img" src="img/intro3.jpg" alt="">
+                        <img class="card-img" src="img/lz7.jpg" alt="">
                      </div>
                      <!-- /card -->
                      <!-- back of card -->  			
@@ -314,7 +314,7 @@ export default function Page() {
                   <!-- /col-lg -->
                   <div class="col-lg-5 res-margin">
                      <!-- image -->
-                     <img class="img-fluid rounded" src="img/about/about2.jpg" alt="">
+                     <img class="img-fluid rounded" src="img/about/lz8.jpg" alt="">
                      <!-- ornament starts-->
                      <div class="ornament-rainbow" data-aos="zoom-out"></div>
                   </div>
@@ -467,7 +467,7 @@ export default function Page() {
                   <!-- /col-l -->
                   <div class="col-lg-6 features-bg">
                      <!-- image -->
-                     <img src="img/features.png" alt="" class="img-fluid"  data-aos="zoom-out"   data-aos-delay="300">
+                     <img src="img/lz10.png" alt="" class="img-fluid"  data-aos="zoom-out"   data-aos-delay="300">
                   </div>
                   <!-- /col-l -->
                </div>
@@ -506,7 +506,7 @@ export default function Page() {
                               <div class="row">
                                  <div class="col-lg-6">
                                     <!-- image -->
-                                    <img src="img/services/service1.jpg" alt="" class="rounded img-fluid">
+                                    <img src="img/services/lz11.webp" alt="" class="rounded img-fluid">
                                     <!-- ornament starts-->
                                     <div class="ornament-rainbow" data-aos="fade-right"></div>
                                  </div>
@@ -556,7 +556,7 @@ export default function Page() {
                               <div class="row">
                                  <div class="col-lg-6">
                                     <!-- image -->
-                                    <img src="img/services/service3.jpg" alt="" class="rounded img-fluid">
+                                    <img src="img/services/lz12.jpg" alt="" class="rounded img-fluid">
                                     <!-- ornament starts-->
                                     <div class="ornament-bubbles" data-aos="fade-right"></div>
                                  </div>
@@ -606,7 +606,7 @@ export default function Page() {
                               <div class="row">
                                  <div class="col-lg-6">
                                     <!-- image -->
-                                    <img src="img/services/service5.jpg" alt="" class="rounded img-fluid">
+                                    <img src="img/services/lz13.jpg" alt="" class="rounded img-fluid">
                                     <!-- ornament starts-->
                                     <div class="ornament-rainbow" data-aos="fade-right"></div>
                                  </div>
@@ -640,7 +640,7 @@ export default function Page() {
          </section>
          <!-- /section ends -->
          <!-- Section  -->
-         <section id="counter-section" class="container-fluid counter-calltoaction bg-fixed overlay"  data-100-bottom="background-position: 50% 100px;"
+         <section id="counter-section" class="container-fluid counter-calltoaction bg-fixed overlay"  data-100-bottom="background-position: 50% 100px; "
             data-top-bottom="background-position: 50% -100px;" >
             <div id="counter" class="container">
                <div  class="row col-lg-10 offset-lg-1">
@@ -709,7 +709,7 @@ export default function Page() {
                </div>
                <!-- /col-lg-->
                <div class="col-lg-5 res-margin">
-                  <img src="img/team/team-home.jpg" alt="" class="img-fluid blob2">
+                  <img src="img/team/lz16.jpg" alt="" class="img-fluid blob2">
                   <!-- ornament starts-->
                   <div class="ornament-stars" data-aos="fade-down"></div>
                </div>
