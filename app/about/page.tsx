@@ -5,11 +5,12 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>About - ABC Tots</title>
+        <title>À propos - Garderie Les Z'Heureux</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
-      <div dangerouslySetInnerHTML={ { __html: `<!DOCTYPE html>
+      <div dangerouslySetInnerHTML={{
+  __html: `<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta charset="utf-8">
@@ -41,6 +42,8 @@ export default function Page() {
       <link href="css/plugins.css" rel="stylesheet">
       <!-- Colors CSS -->
       <link href="styles/maincolors.css" rel="stylesheet">
+      <!-- LayerSlider CSS -->
+      <link rel="stylesheet" href="vendor/layerslider/css/layerslider.css">
    </head>
    <!-- ==== body starts ==== -->
    <body id="top">
@@ -64,43 +67,16 @@ export default function Page() {
       <!--/Preloader ends -->
       <nav id="main-nav" class="navbar-expand-xl">
          <div class="row">
-            <!-- Start Top Bar -->
-            <div class="container-fluid top-bar" >
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-9">
-                        <!-- Start Contact Info -->
-                        <ul class="contact-details float-left">
-                           <li><i class="fa fa-map-marker"></i>Street name 123 - New York</li>
-                           <li><i class="fa fa-envelope"></i><a href="mailto:email@site.com">email@yoursite.com</a></li>
-                           <li><i class="fa fa-phone"></i>(123) 456-789</li>
-                        </ul>
-                        <!-- End Contact Info -->
-                     </div>
-                     <!-- col -->
-                     <div class="col-md-3">
-                        <!-- Start Social Links -->
-                        <ul class="social-list float-end list-inline">
-                           <li class="list-inline-item"><a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                           <li class="list-inline-item"><a title="Twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                           <li class="list-inline-item"><a  title="Instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                        <!-- /End Social Links -->
-                     </div>
-                     <!-- col -->
-                  </div>
-                  <!-- /row -->
-               </div>
-               <!-- /container -->
-            </div>
-            <!-- End Top bar --> 
             <!-- Navbar Starts -->
             <div class="navbar container-fluid">
-               <div class="container ">
-                  <!-- logo -->
-                  <a class="nav-brand" href="index.html">
-                  <img src="img/logo.png" alt="" class="img-fluid">
-                  </a>
+               <div class="container d-flex align-items-center justify-content-between">
+    <div class="d-flex align-items-center">
+      <a class="nav-brand" href="/">
+        <img src="/img/logoZrm.png" alt="Logo" style="height: 100px !important;" class="img-fluid me-2">
+      </a>
+      <!-- titre -->
+      <span style="font-size: 1.8rem; font-weight: bold; color: #28a745;">Les Z'heureux</span>
+    </div>
                   <!-- Navbar toggler -->
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggle-icon">
@@ -109,70 +85,39 @@ export default function Page() {
                   </button>
                   <div class="collapse navbar-collapse" id="navbarResponsive">
                      <ul class="navbar-nav ms-auto">
-                        <!-- menu item -->
-                        <li class="nav-item home-menu">
-                           <a class="nav-link" href="/">Home
-                           </a>
+                        <!-- menu item - Home -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/">Acceuil</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="services-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Services
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="services-dropdown">
-                              <a class="dropdown-item" href="services.html">Services Style 1</a>
-                              <a class="dropdown-item" href="services2.html">Services Style 2</a>
-                              <a class="dropdown-item" href="services-single.html">Services Single</a>
-                           </div>
+                        
+                        <!-- menu item - Services -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/services">Services</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="about-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           About
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="about-dropdown">
-                              <a class="dropdown-item" href="about.html">About Style 1</a>
-                              <a class="dropdown-item" href="about2.html">About Style 2</a>
-                              <a class="dropdown-item" href="team.html">Our Team</a>
-                              <a class="dropdown-item" href="team-single.html">Team Single Page</a>
-                              <a class="dropdown-item" href="careers.html">Careers</a>
-                              <a class="dropdown-item" href="pricing.html">Pricing</a>
-                           </div>
+                        
+                        <!-- menu item - About -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/about">À propos</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="gallery-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Gallery
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="gallery-dropdown">
-                              <a class="dropdown-item" href="gallery.html">Gallery Style 1</a>
-                              <a class="dropdown-item" href="gallery2.html">Gallery Style 2</a>
-                              <a class="dropdown-item" href="gallery3.html">Gallery Style 3</a>
-                           </div>
+                        
+                        <!-- menu item - Our Team -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/team">Notre équipe</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="contact-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Contact
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="contact-dropdown">
-                              <a class="dropdown-item" href="contact.html">Contact Style 1</a>
-                              <a class="dropdown-item" href="contact2.html">Contact Style 2</a>
-                              <a class="dropdown-item" href="contact3.html">Contact Style 3</a>
-                           </div>
+                        
+                        <!-- menu item - Careers -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/careers">Carrières</a>
                         </li>
-                        <!-- menu item -->
-                        <li class="nav-item dropdown">
-                           <a class="nav-link dropdown-toggle" href="#" id="others-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                           Other pages
-                           </a>
-                           <div class="dropdown-menu" aria-labelledby="others-dropdown">
-                              <a class="dropdown-item" href="blog.html">Blog Home 1</a>
-                              <a class="dropdown-item" href="blog2.html">Blog Home 2</a>
-                              <a class="dropdown-item" href="blog-single.html">Blog Single</a>
-                              <a class="dropdown-item" href="elements.html">Elements Page</a>
-                              <a class="dropdown-item" href="404.html">404 Page</a>
-                           </div>
+                        
+                        <!-- menu item - Pricing -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/pricing">Prix</a>
+                        </li>
+                        
+                        <!-- menu item - Contact -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/contact">Contact</a>
                         </li>
                      </ul>
                      <!--/ul -->
@@ -393,8 +338,8 @@ export default function Page() {
                <div class="row">
                   <div class="col-lg-4 text-center">
                      <!-- logo -->
-                     <img src="img/logo_light.png"  class="logo-footer img-fluid" alt="">
-                     <h5 class="mt-3">Subscribe to our newsletter</h5>
+                     <img src="img/logoZrm.png"  class="logo-footer img-fluid" alt="" style="height: 80px;">
+                     <h5 class="mt-3">Abonnez-vous à notre infolettre</h5>
                      <!-- Mailist Form -->				
                      <div id="mc_embed_signup">
                         <!-- your mailist address in the line bellow -->
@@ -402,7 +347,7 @@ export default function Page() {
                            <div id="mc_embed_signup_scroll">
                               <div class="mc-field-group">
                                  <div class="input-group">
-                                    <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Your email here" id="mce-EMAIL">
+                                    <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Votre e-mail ici" id="mce-EMAIL">
                                     <span class="input-group-btn">
                                     <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
                                     </span>
@@ -423,29 +368,24 @@ export default function Page() {
                   </div>
                   <!--/ col-lg -->
                   <div class="col-lg-4 text-center res-margin">
-                     <h5>Contact Us</h5>
+                     <h5>Contactez Nous</h5>
                      <ul class="list-unstyled mt-3">
-                        <li class="mb-1"><i class="fas fa-phone margin-icon "></i>(123) 456-789</li>
-                        <li class="mb-1"><i class="fas fa-envelope margin-icon"></i><a href="mailto:email@yoursite.com">email@yoursite.com</a></li>
-                        <li><i class="fas fa-map-marker margin-icon"></i>Street Name 123 - New York </li>
+                        <li class="mb-1"><i class="fas fa-phone margin-icon "></i>514-507-4015</li>
+                        <li class="mb-1"><i class="fas fa-envelope margin-icon"></i><a href="mailto:Leszheureuxgarderie@gmail.com">Leszheureuxgarderie@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker margin-icon"></i>6001, rue Hochelaga, Montréal. Québec, H1N 1X5 </li>
                      </ul>
                      <!--/ul -->
                      <!-- Start Social Links -->
-                     <ul class="social-list text-center list-inline mt-2">
-                        <li class="list-inline-item"><a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a title="Twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a  title="Instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                     </ul>
                      <!-- /End Social Links -->
                   </div>
                   <!--/ col-lg -->
                   <div class="col-lg-4 text-center">
                      <h5>Working Hours</h5>
                      <ul class="list-unstyled mt-3">
-                        <li class="mb-1">Monday to Friday</li>
-                        <li class="mb-1">Open from 9am - 6pm</li>
-                        <li class="mb-1">Holidays - Closed</li>
-                        <li>Weekends - Closed</li>
+                        <li class="mb-1">Lundi au vendredi</li>
+                        <li class="mb-1">Ouvert de 8h à 17h</li>
+                        <li class="mb-1">Jours fériés – Fermé</li>
+                        <li>Fins de semaine – Fermé</li>
                      </ul>
                      <!--/ul -->
                   </div>
@@ -454,9 +394,6 @@ export default function Page() {
                <!--/ row-->
                <hr>
                <div class="row">
-                  <div class="credits col-sm-12">
-                     <p>Designed by <a href="http://www.ingridkuhn.com">Ingrid Kuhn</a></p>
-                  </div>
                </div>
                <!--/row-->
             </div>

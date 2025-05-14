@@ -1,11 +1,10 @@
-
 import Head from 'next/head';
 
 export default function Page() {
    return (
       <>
          <Head>
-            <title>Index - ABC Tots</title>
+            <title>Acceuil - Garderie Les Z'Heureux</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          </Head>
@@ -67,36 +66,6 @@ export default function Page() {
       <!--/Preloader ends -->
       <nav id="main-nav" class="navbar-expand-xl">
          <div class="row">
-            <!-- Start Top Bar -->
-            <div class="container-fluid top-bar" >
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-9">
-                        <!-- Start Contact Info -->
-                        <ul class="contact-details float-left">
-                           <li><i class="fa fa-map-marker"></i>Street name 123 - New York</li>
-                           <li><i class="fa fa-envelope"></i><a href="mailto:email@site.com">email@yoursite.com</a></li>
-                           <li><i class="fa fa-phone"></i>(123) 456-789</li>
-                        </ul>
-                        <!-- End Contact Info -->
-                     </div>
-                     <!-- col -->
-                     <div class="col-md-3">
-                        <!-- Start Social Links -->
-                        <ul class="social-list float-end list-inline">
-                           <li class="list-inline-item"><a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                           <li class="list-inline-item"><a title="Twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                           <li class="list-inline-item"><a  title="Instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                        </ul>
-                        <!-- /End Social Links -->
-                     </div>
-                     <!-- col -->
-                  </div>
-                  <!-- /row -->
-               </div>
-               <!-- /container -->
-            </div>
-            <!-- End Top bar --> 
             <!-- Navbar Starts -->
             <div class="navbar container-fluid">
                <div class="container d-flex align-items-center justify-content-between">
@@ -117,7 +86,7 @@ export default function Page() {
                      <ul class="navbar-nav ms-auto">
                         <!-- menu item - Home -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/">Home</a>
+                           <a class="nav-link" href="/">Acceuil</a>
                         </li>
                         
                         <!-- menu item - Services -->
@@ -127,22 +96,22 @@ export default function Page() {
                         
                         <!-- menu item - About -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/about">About</a>
+                           <a class="nav-link" href="/about">À propos</a>
                         </li>
                         
                         <!-- menu item - Our Team -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/team">Our Team</a>
+                           <a class="nav-link" href="/team">Notre équipe</a>
                         </li>
                         
                         <!-- menu item - Careers -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/careers">Careers</a>
+                           <a class="nav-link" href="/careers">Carrières</a>
                         </li>
                         
                         <!-- menu item - Pricing -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/pricing">Pricing</a>
+                           <a class="nav-link" href="/pricing">Prix</a>
                         </li>
                         
                         <!-- menu item - Contact -->
@@ -1037,8 +1006,8 @@ export default function Page() {
                <div class="row">
                   <div class="col-lg-4 text-center">
                      <!-- logo -->
-                     <img src="img/logo_light.png"  class="logo-footer img-fluid" alt="">
-                     <h5 class="mt-3">Subscribe to our newsletter</h5>
+                     <img src="img/logoZrm.png"  class="logo-footer img-fluid" alt="" style="height: 80px;">
+                     <h5 class="mt-3">Abonnez-vous à notre infolettre</h5>
                      <!-- Mailist Form -->				
                      <div id="mc_embed_signup">
                         <!-- your mailist address in the line bellow -->
@@ -1046,7 +1015,7 @@ export default function Page() {
                            <div id="mc_embed_signup_scroll">
                               <div class="mc-field-group">
                                  <div class="input-group">
-                                    <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Your email here" id="mce-EMAIL">
+                                    <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Votre e-mail ici" id="mce-EMAIL">
                                     <span class="input-group-btn">
                                     <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
                                     </span>
@@ -1067,29 +1036,24 @@ export default function Page() {
                   </div>
                   <!--/ col-lg -->
                   <div class="col-lg-4 text-center res-margin">
-                     <h5>Contact Us</h5>
+                     <h5>Contactez Nous</h5>
                      <ul class="list-unstyled mt-3">
-                        <li class="mb-1"><i class="fas fa-phone margin-icon "></i>(123) 456-789</li>
-                        <li class="mb-1"><i class="fas fa-envelope margin-icon"></i><a href="mailto:email@yoursite.com">email@yoursite.com</a></li>
-                        <li><i class="fas fa-map-marker margin-icon"></i>Street Name 123 - New York </li>
+                        <li class="mb-1"><i class="fas fa-phone margin-icon "></i>514-507-4015</li>
+                        <li class="mb-1"><i class="fas fa-envelope margin-icon"></i><a href="mailto:Leszheureuxgarderie@gmail.com">Leszheureuxgarderie@gmail.com</a></li>
+                        <li><i class="fas fa-map-marker margin-icon"></i>6001, rue Hochelaga, Montréal. Québec, H1N 1X5 </li>
                      </ul>
                      <!--/ul -->
                      <!-- Start Social Links -->
-                     <ul class="social-list text-center list-inline mt-2">
-                        <li class="list-inline-item"><a title="Facebook" href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="list-inline-item"><a title="Twitter" href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li class="list-inline-item"><a  title="Instagram" href="#"><i class="fab fa-instagram"></i></a></li>
-                     </ul>
                      <!-- /End Social Links -->
                   </div>
                   <!--/ col-lg -->
                   <div class="col-lg-4 text-center">
                      <h5>Working Hours</h5>
                      <ul class="list-unstyled mt-3">
-                        <li class="mb-1">Monday to Friday</li>
-                        <li class="mb-1">Open from 9am - 6pm</li>
-                        <li class="mb-1">Holidays - Closed</li>
-                        <li>Weekends - Closed</li>
+                        <li class="mb-1">Lundi au vendredi</li>
+                        <li class="mb-1">Ouvert de 8h à 17h</li>
+                        <li class="mb-1">Jours fériés – Fermé</li>
+                        <li>Fins de semaine – Fermé</li>
                      </ul>
                      <!--/ul -->
                   </div>
@@ -1098,9 +1062,6 @@ export default function Page() {
                <!--/ row-->
                <hr>
                <div class="row">
-                  <div class="credits col-sm-12">
-                     <p>Designed by <a href="http://www.ingridkuhn.com">Ingrid Kuhn</a></p>
-                  </div>
                </div>
                <!--/row-->
             </div>
