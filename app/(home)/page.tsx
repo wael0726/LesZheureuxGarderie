@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from 'react';
 import Head from 'next/head';
-import { useCustomCursor } from '../composables/useCustomCursor';
+import { useCustomCursor } from '../../public/js/UseCustomCursor';
 
 export default function Page() {
   useEffect(() => {
@@ -1060,6 +1060,7 @@ Je recommande à 100%!!!
       <script src="js/prefixfree.min.js"></script>
       <!-- number counter script -->
       <script src="js/counter.js"></script>
+      <script src="js/UseCustomCursor.js"></script>
       <!-- maps -->
       <script src="js/map.js"></script>
       <!-- GreenSock -->

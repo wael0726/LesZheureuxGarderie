@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from 'react';
 import Head from 'next/head';
-import { useCustomCursor } from '../composables/useCustomCursor';
+import { useCustomCursor } from '../../public/js/UseCustomCursor';
 
 export default function Page() {
   useEffect(() => {
@@ -665,6 +665,7 @@ export default function Page() {
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
       <!-- Custom Js -->
+      <script src="js/UseCustomCursor.js"></script>
       <script src="js/custom.js"></script>
       <script src="js/plugins.js"></script>
       <!-- Prefix free -->

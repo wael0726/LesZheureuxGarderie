@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from 'react';
 import Head from 'next/head';
-import { useCustomCursor } from '../composables/useCustomCursor';
+import { useCustomCursor } from '../../public/js/UseCustomCursor';
 
 export default function Page() {
   useEffect(() => {
@@ -309,6 +309,7 @@ export default function Page() {
       <!-- Custom Js -->
       <script src="js/custom.js"></script>
       <script src="js/plugins.js"></script>
+      <script src="js/UseCustomCursor.js"></script>
       <!-- Prefix free -->
       <script src="js/prefixfree.min.js"></script>
       <!-- maps -->
