@@ -1,6 +1,14 @@
+"use client";
+import { useEffect } from 'react';
 import Head from 'next/head';
+import { useCustomCursor } from '../composables/useCustomCursor';
 
 export default function Page() {
+  useEffect(() => {
+    const { initCustomCursor } = useCustomCursor();
+    initCustomCursor();
+  }, []); // Cette fonction ne se déclenche qu'une seule fois, à l'initialisation du composant
+
   return (
     <>
       <Head>

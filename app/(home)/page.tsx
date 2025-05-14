@@ -1,13 +1,21 @@
+"use client";
+import { useEffect } from 'react';
 import Head from 'next/head';
+import { useCustomCursor } from '../composables/useCustomCursor';
 
 export default function Page() {
-   return (
-      <>
-         <Head>
-            <title>Acceuil - Garderie Les Z'Heureux</title>
-            <meta charSet="UTF-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-         </Head>
+  useEffect(() => {
+    const { initCustomCursor } = useCustomCursor();
+    initCustomCursor();
+  }, []); // Cette fonction ne se déclenche qu'une seule fois, à l'initialisation du composant
+
+  return (
+    <>
+      <Head>
+        <title>Acceuil - Garderie Les Z'Heureux</title>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Head>
          <div dangerouslySetInnerHTML={{
   __html: `<!DOCTYPE html>
 <html lang="en">
@@ -155,8 +163,8 @@ export default function Page() {
                         <h1> Les Z'heureux</h1>
                         <!--the div below is hidden on small screens  -->
                         <div class="hidden-small">
-                           <p class="header-p">We offer high quality Daycare Services, contact us or visit us today for more information</p>
-                           <a class="btn btn-secondary" href="contact.html">Contact us</a>
+                           <p class="header-p">Nous offrons des services de garderie de haute qualité. Contactez-nous ou venez nous visiter dès aujourd’hui pour en savoir plus.</p>
+                           <a class="btn btn-secondary" href="/contact">Contactez Nous</a>
                         </div>
                         <!--/hidden-small -->
                      </div>
@@ -183,12 +191,12 @@ export default function Page() {
                      <!-- front of card  -->  
                      <div class="card bg-secondary text-light ">
                         <div class="p-5">
-                           <h5 class="card-title text-light">Licensed Child Care</h5>
+                           <h5 class="card-title text-light">Garderie Accréditée</h5>
                            <p class="card-text">
-                              In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat lorem
+                              Notre garderie est entièrement accréditée, ce qui garantit un environnement sécuritaire et conforme aux normes les plus strictes. Vous pouvez avoir l’esprit tranquille en nous confiant votre enfant.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
-                           <a href="contact.html" class="btn d-lg-none">Contact us</a>
+                           <a href="contact.html" class="btn d-lg-none">Contactez Nous</a>
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
@@ -199,12 +207,11 @@ export default function Page() {
                      <div class="card bg-secondary text-light card-back">
                         <div class="card-body d-flex justify-content-center align-items-center">
                            <div class="p-4">
-                              <h5 class="card-title text-light">Since 2004</h5>
-                              <p class="card-text">enas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. 
-                                 In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat
+                              <h5 class="card-title text-light">Since 2012</h5>
+                              <p class="card-text">Depuis notre accréditation, nous nous assurons de respecter les plus hauts standards en matière de sécurité et d'éducation. Cela vous garantit un environnement stable et conforme aux exigences légales pour le bien-être de votre enfant.
                               </p>
                               <!-- button -->
-                              <a href="contact.html" class="btn">contact us</a>
+                              <a href="/contact" class="btn">contactez Nous</a>
                            </div>
                            <!-- /p-4 -->
                         </div>
@@ -221,9 +228,9 @@ export default function Page() {
                      <!-- front of card  -->  
                      <div class="card bg-primary text-light">
                         <div class="p-5">
-                           <h5 class="card-title text-light">High Quality learning</h5>
+                           <h5 class="card-title text-light">Apprentissage de Qualité</h5>
                            <p class="card-text">
-                              In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat lorem
+                              Nous offrons un programme éducatif axé sur le jeu et adapté à l’âge, qui stimule la curiosité et favorise le développement global de l’enfant à son rythme.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
                            <a href="services.html" class="btn d-lg-none">Our Services</a>
@@ -237,12 +244,11 @@ export default function Page() {
                      <div class="card bg-primary text-light card-back">
                         <div class="card-body d-flex justify-content-center align-items-center">
                            <div class="p-4">
-                              <h5 class="card-title text-light">Quality daycare</h5>
-                              <p class="card-text">enas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. 
-                                 In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat
+                              <h5 class="card-title text-light">Apprentissage de Qualité</h5>
+                              <p class="card-text">Notre approche éducative repose sur l'apprentissage par le jeu, ce qui permet à chaque enfant de s'épanouir à son rythme. Nous mettons l'accent sur la créativité et l'exploration pour stimuler leur curiosité naturelle.
                               </p>
                               <!-- button -->
-                              <a href="services.html" class="btn">Our Services</a>
+                              <a href="/services" class="btn">Our Services</a>
                            </div>
                            <!-- /p-4 -->
                         </div>
@@ -259,9 +265,9 @@ export default function Page() {
                      <!-- front of card  -->  
                      <div class="card bg-tertiary text-light">
                         <div class="p-5">
-                           <h5 class="card-title text-light">Talented Staff</h5>
+                           <h5 class="card-title text-light">Équipe Talentueuse</h5>
                            <p class="card-text">
-                              In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat lorem
+                              Nos éducatrices passionnées et expérimentées s’engagent pleinement dans l’épanouissement de chaque enfant. Elles créent un climat chaleureux et rassurant où chacun se sent valorisé.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
                            <a href="team.html" class="btn d-lg-none">Our Team</a>
@@ -275,9 +281,8 @@ export default function Page() {
                      <div class="card bg-tertiary text-light card-back">
                         <div class="card-body d-flex justify-content-center align-items-center">
                            <div class="p-4">
-                              <h5 class="card-title text-light">Meet our Staff</h5>
-                              <p class="card-text">enas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. 
-                                 In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat
+                              <h5 class="card-title text-light">Équipe Talentueuse</h5>
+                              <p class="card-text">Nos éducatrices sont non seulement expérimentées, mais également dévouées à créer une atmosphère bienveillante et inspirante. Elles sont présentes pour guider chaque enfant, en les accompagnant dans leurs découvertes quotidiennes avec une attention particulière.
                               </p>
                               <!-- button -->
                               <a href="team.html" class="btn">Our Team</a>
@@ -300,16 +305,16 @@ export default function Page() {
             <div class="container">
                <!-- section heading -->  
                <div class="section-heading text-center">
-                  <h2>About Us</h2>
-                  <p class="subtitle">Get to know us</p>
+                  <h2>À propos</h2>
+                  <p class="subtitle">Apprenez à nous connaître</p>
                </div>
                <!-- /section-heading -->
                <div class="row">
                   <div class="col-lg-7 ">
                      <h3>Our Mission</h3>
-                     <p class="mt-4 res-margin">Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecena Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                     <p>Nec elementum ipsum convall. Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecen Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall Maecenas at arcu risus scelerisque laoree.</p>
-                     <a href="contact.html" class="btn btn-secondary ">Contact us</a>
+                     <p class="mt-4 res-margin">Depuis 2012, notre garderie offre un cadre sécuritaire et bienveillant pour les enfants. Notre équipe d’éducatrices qualifiées met un point d’honneur à accompagner chaque enfant dans son développement, en stimulant sa curiosité et son autonomie.</p>
+                     <p>Nous croyons en l'importance d'une collaboration étroite avec les parents pour garantir le bien-être de chaque petit. Chez nous, chaque moment est une occasion d'apprendre, de s’amuser et de grandir dans un environnement de confiance et de joie.</p>
+                     <a href="/contact" class="btn btn-secondary ">Contact us</a>
                   </div>
                   <!-- /col-lg -->
                   <div class="col-lg-5 res-margin">
@@ -321,7 +326,7 @@ export default function Page() {
                   <!-- /col-lg -->
                </div>
                <!-- /row -->
-               <h3 class="mt-5 text-center">What Parents say:</h3>
+               <h3 class="mt-5 text-center"><span style="color:#1a73e8">G</span><span style="color:#ea4335">o</span><span style="color:#fbbc05">o</span><span style="color:#1a73e8">g</span><span style="color:#34a853">l</span><span style="color:#ea4335">e</span> Reviews ★★★★☆ 4.7</h3>
                <div class="row">
                   <!-- testimonials -->
                   <!-- testimonial carousel -->
@@ -330,17 +335,18 @@ export default function Page() {
                      <div class="testimonial">
                         <div class="content">
                            <p class="description">
-                              Scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.                        
+                              Ma fille a fréquenté le service de garde de ses 11 mois à ses 19 mois. Les éducatrices sont aimantes et s'occupent très bien des enfants. Elles sont a l'écoute également des parents ce qui est top. Beaucoup d'activités variées et des photos de tant en tant pour voir notre petit bout, des supers repas et même un petit cahier rempli chaque jour pour savoir comment s'est déroulée la journée.
+Nous avons du déménagé, mais j'aurais voulu ramener la garderie et les educatrices avec nous :(
+Je recommande à 100%!!!                        
                            </p>
                         </div>
                         <!-- /content -->
                         <div class="testimonial-pic">
-                           <img src="img/team/team1.jpg" class="img-fluid" alt="">
+                           <img src="img/team/fatimatou.png" class="img-fluid" alt="">
                         </div>
                         <!-- /testimonial-pic -->
                         <div class="testimonial-review">
-                           <h5 class="testimonial-title">Lucianna Smith</h5>
-                           <span class="post">Teacher</span>
+                           <h5 class="testimonial-title">Begue Fatimatou</h5>
                         </div>
                         <!-- /testimonial-review -->
                      </div>
@@ -349,17 +355,84 @@ export default function Page() {
                      <div class="testimonial">
                         <div class="content">
                            <p class="description">
-                              Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.                        
+                              Super garderie ! Les éducatrices sont formidables et prennent soin de nos enfants avec beaucoup d'attention. Je recommande cette garderie sans hésitation. Mes enfants y ont passé trois belles années remplies d'amour, de passion et d'activités éducatives enrichissantes.                        
                            </p>
                         </div>
                         <!-- /content -->
                         <div class="testimonial-pic">
-                           <img src="img/team/team2.jpg" class="img-fluid" alt="">
+                           <img src="img/team/frank.png" class="img-fluid" alt="">
                         </div>
                         <!-- /testimonial-pic -->
                         <div class="testimonial-review">
-                           <h5 class="testimonial-title">John Sadana</h5>
-                           <span class="post">Doctor</span>
+                           <h5 class="testimonial-title">Frank Pham</h5>
+                        </div>
+                        <!-- /testimonial-review -->
+                     </div>
+                     <!-- /testimonial -->
+                     <div class="testimonial">
+                        <div class="content">
+                           <p class="description">
+                              Nos enfants fréquentent cette super garderie depuis maintenant un peu plus de deux ans et ils adorent les éducatrices! Nous sommes très contents d'avoir trouvé cet endroit sûr et joyeux pour nos petits cocos!                        
+                           </p>
+                        </div>
+                        <!-- /content -->
+                        <div class="testimonial-pic">
+                           <img src="img/team/mathieu.png" class="img-fluid" alt="">
+                        </div>
+                        <!-- /testimonial-pic -->
+                        <div class="testimonial-review">
+                           <h5 class="testimonial-title">Mathieu Dumont</h5>
+                        </div>
+                        <!-- /testimonial-review -->
+                     </div>
+                     <!-- /testimonial -->
+                     <div class="testimonial">
+                        <div class="content">
+                           <p class="description">
+                              Les éducatrices font un travail exceptionnel. Les enfants les adorent et elles donnent toujours de bons conseils. Elles prennent vraiment le temps pour chaque enfant, et les horaires sont très flexibles pour les parents. Les repas sont appréciés par tous, et chaque matin, les enfants sautent de joie à l’idée de retrouver leurs gardiennes préférées.                      
+                           </p>
+                        </div>
+                        <!-- /content -->
+                        <div class="testimonial-pic">
+                           <img src="img/team/marc.png" class="img-fluid" alt="">
+                        </div>
+                        <!-- /testimonial-pic -->
+                        <div class="testimonial-review">
+                           <h5 class="testimonial-title">marc-philippe freeman</h5>
+                        </div>
+                        <!-- /testimonial-review -->
+                     </div>
+                     <!-- /testimonial -->
+                     <div class="testimonial">
+                        <div class="content">
+                           <p class="description">
+                              Je n'ai que de bons commentaires pour ce petit bijou de garderie. Les éducatrices sont exceptionnelles et ont réellement à coeur d'offrir un service hors pair. Elles sont disponibles, affectueuses, professionnelles, dévouées autant envers les enfants qui fréquentent la garderie qu'envers les parents. Nous avons de la chance d'avoir une place pour notre poupon et il ne fait aucun doute qu'il s'y plait. Le travail de cette équipe est absolument remarquable.                      
+                           </p>
+                        </div>
+                        <!-- /content -->
+                        <div class="testimonial-pic">
+                           <img src="img/team/g.png" class="img-fluid" alt="">
+                        </div>
+                        <!-- /testimonial-pic -->
+                        <div class="testimonial-review">
+                           <h5 class="testimonial-title">Geneviève Gravel</h5>
+                        </div>
+                        <!-- /testimonial-review -->
+                     </div>
+                     <!-- /testimonial -->
+                     <div class="testimonial">
+                        <div class="content">
+                           <p class="description">
+                              Ma fille à été a la garderie les Z'heureux pendant à peu près 2 ans et elle à adoré! C'était une super expérience non seulement pour elle mais pour les parents, les éducatrices font un travail exceptionnel et ma fille les aimait beaucoup. Un bon suivi sur sa progression, une super communication entre les éducatrices et les parents et je sentais vraiment qu'elles aimaient ma fille. Sans oublier qu'elle adorait les repas! Elle s'est fait un super groupe d'amies et les enfants s'amusait beaucoup ensemble! Ma fille s'est épanouie à cette garderie et c'est grâce à vous. Merci encore mille fois pour ses belles années et tout vos efforts. ❤️                      
+                           </p>
+                        </div>
+                        <!-- /content -->
+                        <div class="testimonial-pic">
+                           <img src="img/team/y.png" class="img-fluid" alt="">
+                        </div>
+                        <!-- /testimonial-pic -->
+                        <div class="testimonial-review">
+                           <h5 class="testimonial-title">Yoanna Fitoussi</h5>
                         </div>
                         <!-- /testimonial-review -->
                      </div>
@@ -368,17 +441,16 @@ export default function Page() {
                      <div class="testimonial">
                         <div class="content">
                            <p class="description">
-                              Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.                        
+                              Cet endroit est tout simplement parfait. Beaucoup d'activités pour les enfants et de temps de jeu. Ma fille a passé de très bons moments ici pendant plus d'un an. C’était très agréable de voir ma fille heureuse d’aller à la garderie tous les jours, cela nous met à l’aise pour aller travailler et nous savons qu’on s’occupe bien d’elle.                        
                            </p>
                         </div>
                         <!-- /content -->
                         <div class="testimonial-pic">
-                           <img src="img/team/team3.jpg" class="img-fluid" alt="">
+                           <img src="img/team/flipe.png" class="img-fluid" alt="">
                         </div>
                         <!-- /testimonial-pic -->
                         <div class="testimonial-review">
-                           <h5 class="testimonial-title">Jane Janeth</h5>
-                           <span class="post">Librarian</span>
+                           <h5 class="testimonial-title">Felipe de leo</h5>
                         </div>
                         <!-- /testimonial-review -->
                      </div>
@@ -408,8 +480,8 @@ export default function Page() {
             <div class="container">
                <!-- section heading -->  
                <div class="section-heading text-center">
-                  <h2>Our Features</h2>
-                  <p class="subtitle">Benefits for you</p>
+                  <h2>Nos caractéristiques</h2>
+                  <p class="subtitle">Les avantages pour vous</p>
                </div>
                <!-- /section-heading -->
                <!-- features -->
@@ -423,8 +495,8 @@ export default function Page() {
                                  <!-- icon -->
                                  <i class="flaticon-maternity text-primary"></i>
                               </div>
-                              <h5>Safe Enviroment</h5>
-                              <p>Etiam rhoncus leo a dolor placerat, nec elem entum ipsum convall.</p>
+                              <h5>Environnement Sûr</h5>
+<p>Nous offrons un environnement sécurisé où chaque enfant peut s’épanouir en toute confiance, entouré de professionnels qualifiés et bienveillants.</p>
                            </div>
                            <!-- /feature-with-icon-->
                            <!-- feature -->
@@ -433,8 +505,8 @@ export default function Page() {
                                  <!-- icon -->
                                  <i class="flaticon-open-book-1 text-primary"></i>
                               </div>
-                              <h5>Educational activities</h5>
-                              <p>Etiam rhoncus leo a dolor placerat, nec elem entum ipsum convall.</p>
+                              <h5>Activités Éducatives</h5>
+<p>Nous proposons des activités éducatives stimulantes qui favorisent le développement cognitif, social et émotionnel de chaque enfant, tout en encourageant la curiosité et l’apprentissage à travers le jeu.</p>
                            </div>
                            <!-- /feature-with-icon-->
                         </div>
@@ -445,8 +517,8 @@ export default function Page() {
                                  <!-- icon -->
                                  <i class="flaticon-classroom-1 text-primary"></i>
                               </div>
-                              <h5>Qualified teachers</h5>
-                              <p>Etiam rhoncus leo a dolor placerat, nec elem entum ipsum convall.</p>
+                              <h5>Éducatrices Qualifiées</h5>
+<p>Nos éducatrices sont hautement qualifiées et passionnées par l'éducation des jeunes enfants, offrant un environnement d'apprentissage enrichissant et sécuritaire.</p>
                            </div>
                            <!-- /feature-with-icon-->
                            <!-- feature -->
@@ -455,8 +527,9 @@ export default function Page() {
                                  <!-- icon -->
                                  <i class="flaticon-baby-boy text-primary"></i>
                               </div>
-                              <h5>Infant care</h5>
-                              <p>Etiam rhoncus leo a dolor placerat, nec elem entum ipsum convall.</p>
+                              <h5>Soins aux nourrissons</h5>
+<p>Nous offrons des soins attentionnés et adaptés aux besoins des nourrissons, garantissant un environnement calme, sûr et propice à leur développement.</p>
+
                            </div>
                            <!-- /feature-with-icon-->
                         </div>
@@ -481,8 +554,8 @@ export default function Page() {
             <div class="container pb-5">
                <!-- section heading -->  
                <div class="section-heading text-center">
-                  <h2>Our Services</h2>
-                  <p class="subtitle">what we offer</p>
+                  <h2>Nos Services</h2>
+                  <p class="subtitle">Ce que nous offrons</p>
                </div>
                <!-- /section heading -->
                <!-- row -->
@@ -492,11 +565,11 @@ export default function Page() {
                      <div class="tabs-with-icon">
                         <nav>
                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                              <a class="nav-item nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1"><i class="flaticon-abc-block"></i>Daycare</a>
-                              <a class="nav-item nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" ><i class="flaticon-kids-1"></i>Summer Camp</a>
-                              <a class="nav-item nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" ><i class="flaticon-smiling-baby"></i>Infant care</a>
-                              <a class="nav-item nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4"><i class="flaticon-blackboard"></i>Classes</a>
-                              <a class="nav-item nav-link" id="tab5-tab" data-bs-toggle="tab" href="#tab5" ><i class="flaticon-kids"></i>Activities</a>
+                              <a class="nav-item nav-link active" id="tab1-tab" data-bs-toggle="tab" href="#tab1"><i class="flaticon-abc-block"></i>Garderie</a>
+                              <a class="nav-item nav-link" id="tab2-tab" data-bs-toggle="tab" href="#tab2" ><i class="flaticon-kids-1"></i>Été</a>
+                              <a class="nav-item nav-link" id="tab3-tab" data-bs-toggle="tab" href="#tab3" ><i class="flaticon-smiling-baby"></i>Groupe poupons</a>
+                              <a class="nav-item nav-link" id="tab4-tab" data-bs-toggle="tab" href="#tab4"><i class="flaticon-blackboard"></i>Éducation</a>
+                              <a class="nav-item nav-link" id="tab5-tab" data-bs-toggle="tab" href="#tab5" ><i class="flaticon-kids"></i>Activitiées</a>
                            </div>
                         </nav>
                         <!-- tab-content -->
@@ -512,15 +585,16 @@ export default function Page() {
                                  </div>
                                  <!-- col-lg -->
                                  <div class="col-lg-6">
-                                    <h3>Daycare</h3>
-                                    <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                                    <ul class="custom ps-0">
-                                       <li>Over 30 Qualified professionals</li>
-                                       <li>We offer you our quality services since 2002</li>
-                                       <li>Educational activities in our daily plan</li>
-                                    </ul>
+                                    <h3>Garderie</h3>
+<p>Depuis 2012, notre garderie accueille les enfants dans un cadre chaleureux, sécuritaire et stimulant. Chaque journée est pensée pour favoriser le développement global de l’enfant tout en respectant son rythme et sa personnalité.</p>
+<ul class="custom ps-0">
+   <li>6 éducatrices professionnelles qualifiées et attentionnées</li>
+   <li>Un encadrement bienveillant depuis plus de 10 ans</li>
+   <li>Activités éducatives, créatives et motrices au programme chaque jour</li>
+</ul>
+
                                     <!-- Button -->	 
-                                    <a href="services-single.html" class="btn btn-secondary mt-4">Read More</a>
+                                    <a href="/services" class="btn btn-secondary mt-4">En Savoir Plus</a>
                                  </div>
                                  <!-- /col-lg -->
                               </div>
@@ -530,20 +604,21 @@ export default function Page() {
                            <div class="tab-pane" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
                               <div class="row">
                                  <div class="col-lg-6">
-                                    <h3>Summer Camp</h3>
-                                    <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                                    <ul class="custom ps-0">
-                                       <li>Over 30 Qualified professionals</li>
-                                       <li>We offer you our quality services since 2002</li>
-                                       <li>Educational activities in our daily plan</li>
-                                    </ul>
+                                    <h3>Été</h3>
+<p>Chaque été, nous offrons des activités amusantes et enrichissant pour les enfants. Notre programme est conçu pour stimuler leur curiosité, renforcer leur autonomie et leur permettre de créer de merveilleux souvenirs avec leurs amis.</p>
+<ul class="custom ps-0">
+   <li>Activités extérieures quotidiennes et sorties éducatives</li>
+   <li>Encadrement par nos 6 éducatrices qualifiées et passionnées</li>
+   <li>Ateliers créatifs, jeux d’eau, jardinage et bien plus encore</li>
+</ul>
+
                                     <!-- Button -->	 
-                                    <a href="services-single.html" class="btn btn-secondary mt-4">Read More</a>
+                                    <a href="/services" class="btn btn-secondary mt-4">En Savoir Plus</a>
                                  </div>
                                  <!-- /col-lg -->
                                  <div class="col-lg-6 res-margin">
                                     <!-- image -->
-                                    <img src="img/services/service2.jpg" alt="" class="rounded img-fluid">
+                                    <img src="img/services/lz18.jpg" alt="" class="rounded img-fluid">
                                     <!-- ornament starts-->
                                     <div class="ornament-stars" data-aos="fade-right"></div>
                                  </div>
@@ -562,15 +637,16 @@ export default function Page() {
                                  </div>
                                  <!-- col-lg -->
                                  <div class="col-lg-6">
-                                    <h3>Infant Care</h3>
-                                    <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                                    <ul class="custom ps-0">
-                                       <li>Over 30 Qualified professionals</li>
-                                       <li>We offer you our quality services since 2002</li>
-                                       <li>Educational activities in our daily plan</li>
-                                    </ul>
+                                    <h3>Groupe poupons</h3>
+<p>Nous offrons un service spécialisé pour les poupons dans un environnement calme, sécuritaire et stimulant. L’accent est mis sur l’attention individuelle, la régularité des routines et le développement sensoriel dès les premiers mois.</p>
+<ul class="custom ps-0">
+   <li>Accueil des enfants dès 3 mois</li>
+   <li>Éducatrices attentives à chaque besoin</li>
+   <li>Activités simples : éveil musical, manipulation, exploration douce</li>
+</ul>
+
                                     <!-- Button -->	 
-                                    <a href="services-single.html" class="btn btn-secondary mt-4">Read More</a>
+                                    <a href="/services" class="btn btn-secondary mt-4">En Savoir Plus</a>
                                  </div>
                                  <!-- /col-lg -->
                               </div>
@@ -580,20 +656,21 @@ export default function Page() {
                            <div class="tab-pane" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">
                               <div class="row">
                                  <div class="col-lg-6">
-                                    <h3>Classes</h3>
-                                    <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                                    <ul class="custom ps-0">
-                                       <li>Over 30 Qualified professionals</li>
-                                       <li>We offer you our quality services since 2002</li>
-                                       <li>Educational activities in our daily plan</li>
-                                    </ul>
+                                    <h3>Éducation par groupes</h3>
+<p>Nous proposons une éducation structurée selon des groupes d’âge, permettant à chaque enfant de progresser à son propre rythme dans un environnement stimulant. Les activités sont adaptées au développement de chaque tranche d’âge.</p>
+<ul class="custom ps-0">
+   <li>Groupes pédagogiques selon l’âge</li>
+   <li>Activités éducatives variées chaque jour</li>
+   <li>Encadrement par 6 éducatrices qualifiées</li>
+</ul>
+
                                     <!-- Button -->	 
-                                    <a href="services-single.html" class="btn btn-secondary mt-4">Read More</a>
+                                    <a href="/services" class="btn btn-secondary mt-4">En Savoir Plus</a>
                                  </div>
                                  <!-- /col-lg -->
                                  <div class="col-lg-6 res-margin">
                                     <!-- image -->
-                                    <img src="img/services/service4.jpg" alt="" class="rounded img-fluid">
+                                    <img src="img/services/lz19.jpg" alt="" class="rounded img-fluid">
                                     <!-- ornament starts-->
                                     <div class="ornament-stars" data-aos="fade-right"></div>
                                  </div>
@@ -612,15 +689,16 @@ export default function Page() {
                                  </div>
                                  <!-- col-lg -->
                                  <div class="col-lg-6">
-                                    <h3>Activities</h3>
-                                    <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                                    <ul class="custom ps-0">
-                                       <li>Over 30 Qualified professionals</li>
-                                       <li>We offer you our quality services since 2002</li>
-                                       <li>Educational activities in our daily plan</li>
-                                    </ul>
+                                    <h3>Activités</h3>
+<p>Nous organisons chaque jour une variété d’activités ludiques et éducatives qui favorisent la créativité, l’autonomie et le développement moteur des enfants. Jeux, arts plastiques, sorties et ateliers sont au programme.</p>
+<ul class="custom ps-0">
+   <li>Programme d'activités enrichissantes et variées</li>
+   <li>Encadrement par 6 éducatrices qualifiées</li>
+   <li>Développement de la créativité et de la motricité</li>
+</ul>
+
                                     <!-- Button -->	 
-                                    <a href="services-single.html" class="btn btn-secondary mt-4">Read More</a>
+                                    <a href="/services" class="btn btn-secondary mt-4">En Savoir Plus</a>
                                  </div>
                                  <!-- /col-lg -->
                               </div>
@@ -650,8 +728,8 @@ export default function Page() {
                         <div class="counter-wrapper bg-primary">
                            <i class="counter-icon flaticon-teacher"></i>
                            <!-- insert your final value on data-count= -->
-                           <div class="counter-value" data-count="30">0</div>
-                           <h3 class="title">Professionals</h3>
+                           <div class="counter-value" data-count="6">0</div>
+                           <h3 class="title">Éducatrices</h3>
                         </div>
                      </div>
                      <!-- /counter -->
@@ -663,8 +741,8 @@ export default function Page() {
                         <div class="counter-wrapper bg-secondary">
                            <i class="counter-icon  flaticon-family"></i>
                            <!-- insert your final value on data-count= -->
-                           <div class="counter-value" data-count="74">0</div>
-                           <h3 class="title">Happy parents</h3>
+                           <div class="counter-value" data-count="214">0</div>
+                           <h3 class="title">Parents Satisfaits</h3>
                         </div>
                      </div>
                      <!-- /counter -->
@@ -677,7 +755,7 @@ export default function Page() {
                            <i class="counter-icon flaticon-children"></i>
                            <!-- insert your final value on data-count= -->
                            <div class="counter-value" data-count="104">0</div>
-                           <h3 class="title">Students</h3>
+                           <h3 class="title">Kids</h3>
                         </div>
                      </div>
                      <!-- /counter -->
@@ -692,19 +770,20 @@ export default function Page() {
          <section id="team-home" class="container">
             <!-- section heading -->  
             <div class="section-heading text-center">
-               <h2>Our Team</h2>
-               <p class="subtitle">Qualified Professionals</p>
+               <h2>Notre Équipe</h2>
+               <p class="subtitle">6 éducatrices qualifiées</p>
             </div>
             <!-- /section-heading -->  
             <div class="row">
                <div class="col-lg-7">
-                  <h3>Meet our Talented Team</h3>
-                  <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                  <ul class="checkmark ps-0 font-weight-bold">
-                     <li>Over 30 Qualified professionals</li>
-                     <li>We offer you our quality services since 2002</li>
-                     <li>Fun and educational activities in our daily plan</li>
-                  </ul>
+                  <h3>Rencontrez notre équipe dévouée</h3>
+<p>Depuis notre ouverture en 2012, notre service de garde repose sur l’expertise et l’engagement d’une équipe exceptionnelle. Composée de six éducatrices qualifiées, notre équipe travaille chaque jour avec passion pour créer un environnement stimulant, sécuritaire et chaleureux où chaque enfant peut s’épanouir à son rythme. Nos éducatrices ne se contentent pas de superviser : elles écoutent, soutiennent, encouragent et accompagnent les tout-petits dans leurs apprentissages, en tenant compte de leurs besoins uniques. Leur professionnalisme et leur bienveillance font toute la différence dans la qualité des services que nous offrons, et dans le lien de confiance que nous bâtissons avec les familles.</p>
+<ul class="checkmark ps-0 font-weight-bold">
+   <li>6 éducatrices diplômées et expérimentées</li>
+   <li>Un service de qualité offert depuis 2012</li>
+   <li>Des activités éducatives variées et enrichissantes</li>
+</ul>
+
                   <!-- /ul-->
                </div>
                <!-- /col-lg-->
@@ -716,133 +795,7 @@ export default function Page() {
                <!-- /col-lg-->
                <div class="col-lg-12">
                   <!-- team carousel -->  
-                  <div class="carousel-4items owl-carousel owl-theme mt-5">
-                     <!-- Team member 1 -->
-                     <div class="col-md-12 team-style1 notepad">
-                        <div class="team_img">
-                           <a href="team-single.html">
-                           <img src="img/team/team1.jpg" class="img-fluid" alt="">
-                           </a>
-                           <!-- social icons -->
-                           <ul class="social">
-                              <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                           </ul>
-                        </div>
-                        <!-- /team_img -->
-                        <div class="team-content">
-                           <a href="team-single.html">
-                              <h5 class="title">Laura Smith</h5>
-                           </a>
-                           <span class="post">Teacher</span>
-                           <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-                        </div>
-                        <!-- /team-content -->
-                     </div>
-                     <!-- /team-style1 -->
-                     <!-- Team member 2 -->
-                     <div class="col-md-12 team-style1 notepad">
-                        <div class="team_img">
-                           <a href="team-single.html">
-                           <img src="img/team/team2.jpg" class="img-fluid" alt="">
-                           </a>
-                           <!-- social icons -->
-                           <ul class="social">
-                              <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                           </ul>
-                        </div>
-                        <!-- /team_img -->
-                        <div class="team-content">
-                           <a href="team-single.html">
-                              <h5 class="title">John Doe</h5>
-                           </a>
-                           <span class="post">Administrator</span>
-                           <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-                        </div>
-                        <!-- /team-content -->
-                     </div>
-                     <!-- /team-style1 -->
-                     <!-- Team member 3 -->
-                     <div class="col-md-12 team-style1 notepad">
-                        <div class="team_img">
-                           <a href="team-single.html">
-                           <img src="img/team/team3.jpg" class="img-fluid" alt="">
-                           </a>
-                           <!-- social icons -->
-                           <ul class="social">
-                              <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                           </ul>
-                        </div>
-                        <!-- /team_img -->
-                        <div class="team-content">
-                           <a href="team-single.html">
-                              <h5 class="title">Meghan Smith</h5>
-                           </a>
-                           <span class="post">Assitant Teacher</span>
-                           <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-                        </div>
-                        <!-- /team-content -->
-                     </div>
-                     <!-- /team-style1 -->
-                     <!-- Team member 4 -->
-                     <div class="col-md-12 team-style1 notepad">
-                        <div class="team_img">
-                           <a href="team-single.html">
-                           <img src="img/team/team4.jpg" class="img-fluid" alt="">
-                           </a>
-                           <!-- social icons -->
-                           <ul class="social">
-                              <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                           </ul>
-                        </div>
-                        <!-- /team_img -->
-                        <div class="team-content">
-                           <a href="team-single.html">
-                              <h5 class="title">Mika Doe</h5>
-                           </a>
-                           <span class="post">Teacher</span>
-                           <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-                        </div>
-                        <!-- /team-content -->
-                     </div>
-                     <!-- /team-style1 -->
-                     <!-- Team member 5 -->
-                     <div class="col-md-12 team-style1 notepad">
-                        <div class="team_img">
-                           <a href="team-single.html">
-                           <img src="img/team/team5.jpg" class="img-fluid" alt="">
-                           </a>
-                           <!-- social icons -->
-                           <ul class="social">
-                              <li><a href="#"><i class="fa fa-envelope"></i></a></li>
-                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                           </ul>
-                        </div>
-                        <!-- /team_img -->
-                        <div class="team-content">
-                           <a href="team-single.html">
-                              <h5 class="title">Jillian Smith</h5>
-                           </a>
-                           <span class="post">Asssitant Teacher</span>
-                           <p>Id fermentum augue, ut pellen tesque leo nas. Maecenas at arcu risus Donec com modo.</p>
-                        </div>
-                        <!-- /team-content -->
-                     </div>
-                     <!-- /team-style1 -->
-                  </div>
+                  
                   <!-- /owl-team--> 
                </div>
                <!-- /col-lg-->
@@ -863,15 +816,15 @@ export default function Page() {
                   <div class="col-lg-6 p-0" data-start="right: 50%;" 
                      data-center="right:-5%;">
                      <!-- image  -->
-                     <img src="img/call-to-action/calltoactionbg.jpg" class="img-fluid img-rounded" alt="">
+                     <img src="img/call-to-action/lz17.jpg" class="img-fluid img-rounded" alt="">
                   </div>
                   <!-- text box  -->
                   <div class="col-lg-6 bg-secondary p-5 justify-content-center align-self-center"  data-start="left: 50%;" 
                      data-center="left:-5%;">
                      <div class="text-light justify-content-center align-self-center">
-                        <h3>Enroll Today</h3>
-                        <p>Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus vi tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-                        <a href="contact.html" class="btn btn-tertiary">Contact us</a>
+                        <h3>Inscrivez-vous dès aujourd'hui</h3>
+<p>Ne laissez pas passer l'opportunité d'offrir à votre enfant un environnement sûr et stimulant. Notre garderie est prête à accueillir votre petit dans un cadre chaleureux, où l'épanouissement et l'apprentissage se font main dans la main. Inscrivez-vous aujourd'hui pour garantir une place à votre enfant et rejoindre notre communauté de familles satisfaites. N'attendez plus pour offrir à votre enfant l'attention et l'éducation qu'il mérite.</p>
+                        <a href="/contact" class="btn btn-tertiary">Contactez Nous</a>
                      </div>
                      <!-- /text-light  -->
                   </div>
@@ -888,8 +841,8 @@ export default function Page() {
                <div class="col-lg-10 offset-lg-1 text-center">
                   <!-- section heading -->  
                   <div class="section-heading text-center">
-                     <h2>Contact Us</h2>
-                     <p class="subtitle">Get in Touch</p>
+                     <h2>Contactez Nous</h2>
+                     <p class="subtitle">Entrons en contact</p>
                   </div>
                   <!-- /section-heading -->  
                   <!-- contact info boxes start-->
@@ -901,8 +854,8 @@ export default function Page() {
                               <i class="fa fa-envelope top-icon"></i>
                               <!-- contact-icon info-->
                               <div class="contact-icon-info">
-                                 <h5>Write us</h5>
-                                 <p><a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
+                                 <h5>Écrivez Nous</h5>
+                                 <p><a href="mailto:Leszheureuxgarderie@gmail.com">Leszheureuxgarderie@gmail.com</a></p>
                               </div>
                            </div>
                            <!-- /contact-icon-->
@@ -914,8 +867,8 @@ export default function Page() {
                               <i class="fa fa-map-marker top-icon"></i>
                               <!-- contact-icon info-->
                               <div class="contact-icon-info">
-                                 <h5>Visit us</h5>
-                                 <p>Street Name 123 - New York</p>
+                                 <h5>Visitez Nous</h5>
+                                 <p>6001, rue Hochelaga, Montréal, H1N 1X5</p>
                               </div>
                            </div>
                            <!-- /contact-icon-->
@@ -927,8 +880,8 @@ export default function Page() {
                               <i class="fa fa-phone top-icon"></i>
                               <!-- contact-icon info-->
                               <div class="contact-icon-info">
-                                 <h5>Call us</h5>
-                                 <p>(123) 456-789</p>
+                                 <h5>Contactez Nous</h5>
+                                 <p>514-507-4015</p>
                               </div>
                            </div>
                            <!-- /contact-icon-->
@@ -941,52 +894,75 @@ export default function Page() {
                </div>
                <!-- /col-lg-->
                <!--notepad -->
-               <div class="col-lg-12 mt-5 block-padding force notepad pl-5 pr-5" >
-                  <div class="row">
-                     <div class="col-lg-7">
-                        <!-- contact-info-->
-                        <h4>Send us a message</h4>
-                        <!-- Form Starts -->
-                        <div id="contact_form">
-                           <div class="form-group">
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <label>Name<span class="required">*</span></label>
-                                    <input type="text" name="name" class="form-control input-field" required=""> 
-                                 </div>
-                                 <div class="col-md-6">
-                                    <label>Email Address <span class="required">*</span></label>
-                                    <input type="email" name="email" class="form-control input-field" required=""> 
-                                 </div>
-                              </div>
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <label>Subject</label>
-                                    <input type="text" name="subject" class="form-control input-field"> 
-                                 </div>
-                                 <div class="col-md-12">
-                                    <label>Message<span class="required">*</span></label>
-                                    <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required=""></textarea>
-                                 </div>
-                              </div>
-                              <button type="submit" id="submit_btn" value="Submit" class="btn btn-tertiary">Send message</button>
-                           </div>
-                           <!-- /form-group-->
-                           <!-- Contact results -->
-                           <div id="contact_results"></div>
+               <div class="col-lg-12 mt-5 block-padding force notepad pl-5 pr-5" style="position: relative; z-index: 1;">
+    <!-- Style d'urgence intégré -->
+    <style>
+        .input-field, .textarea-field {
+            pointer-events: auto !important;
+            opacity: 1 !important;
+            position: relative;
+            z-index: 9999 !important;
+            background: white !important;
+        }
+        
+        .notepad::before,
+        .block-padding::after {
+            display: none !important;
+        }
+    </style>
+
+    <div class="row">
+        <div class="col-lg-7">
+            <h4>Envoyez-nous un message</h4>
+            <form action="mailto:Leszheureuxgarderie@gmail.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label for="name">Nom<span class="required">*</span></label>
+                            <input type="text" id="name" name="name" 
+                                   class="form-control input-field"
+                                   style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000;" 
+                                   required>
                         </div>
-                        <!-- /contact-form-->
-                     </div>
-                     <!-- /contact-info-->
-                     <div class="col-lg-5">
-                        <!-- map-->
-                        <div id="map-canvas" class="mt-5 rounded"></div>
-                     </div>
-                     <!-- ornament starts-->
-                     <div class="ornament-stars mt-8 d-none d-md-block" data-aos="zoom-out"></div>
-                  </div>
-                  <!-- /row-->
-               </div>
+                        <div class="col-md-6">
+                            <label for="email">Adresse E-mail <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" 
+                                   class="form-control input-field"
+                                   style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000;"
+                                   required>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" 
+                                   class="form-control input-field"
+                                   style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000;">
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <label for="message">Message<span class="required">*</span></label>
+                            <textarea name="message" id="message" 
+                                      class="textarea-field form-control"
+                                      style="pointer-events: auto !important; opacity: 1 !important; position: relative; z-index: 10000; resize: vertical;"
+                                      rows="3" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-tertiary mt-3" style="z-index: 10000; position: relative;">
+                        Envoyer le message
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-lg-5">
+            <div id="map-canvas" class="mt-5 rounded" style="z-index: 0;"></div>
+        </div>
+
+        <!-- Correction de l'ornement -->
+        <div class="ornament-stars mt-8 d-none d-md-block" data-aos="zoom-out" style="pointer-events: none; z-index: 0 !important;"></div>
+    </div>
+</div>
+
                <!-- /col-lg-->
             </div>
             <!-- /.row-->
@@ -1097,3 +1073,7 @@ export default function Page() {
       </>
    );
 }
+function onMounted(arg0: () => void) {
+   throw new Error('Function not implemented.');
+}
+

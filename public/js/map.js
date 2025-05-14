@@ -4,7 +4,7 @@
 	var mapcanvas = document.getElementById("map-canvas");
 	if(mapcanvas){
 		//Open street  Map
-		var coord = [40.738270, -74.008911]; // <--- coordinates here
+		var coord = [45.57355654309343, -73.53591446079567]; // <--- coordinates here
 
 		var map = L.map('map-canvas', { scrollWheelZoom:false}).setView(coord, 19);
 
