@@ -233,7 +233,7 @@ export default function Page() {
                               Nous offrons un programme éducatif axé sur le jeu et adapté à l’âge, qui stimule la curiosité et favorise le développement global de l’enfant à son rythme.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
-                           <a href="services.html" class="btn d-lg-none">Our Services</a>
+                           <a href="services.html" class="btn d-lg-none">Nos Services</a>
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
@@ -248,7 +248,7 @@ export default function Page() {
                               <p class="card-text">Notre approche éducative repose sur l'apprentissage par le jeu, ce qui permet à chaque enfant de s'épanouir à son rythme. Nous mettons l'accent sur la créativité et l'exploration pour stimuler leur curiosité naturelle.
                               </p>
                               <!-- button -->
-                              <a href="/services" class="btn">Our Services</a>
+                              <a href="/services" class="btn">Nos Services</a>
                            </div>
                            <!-- /p-4 -->
                         </div>
@@ -270,7 +270,7 @@ export default function Page() {
                               Nos éducatrices passionnées et expérimentées s’engagent pleinement dans l’épanouissement de chaque enfant. Elles créent un climat chaleureux et rassurant où chacun se sent valorisé.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
-                           <a href="/team" class="btn d-lg-none">Our Team</a>
+                           <a href="/team" class="btn d-lg-none">Notre Équipe</a>
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
@@ -285,7 +285,7 @@ export default function Page() {
                               <p class="card-text">Nos éducatrices sont non seulement expérimentées, mais également dévouées à créer une atmosphère bienveillante et inspirante. Elles sont présentes pour guider chaque enfant, en les accompagnant dans leurs découvertes quotidiennes avec une attention particulière.
                               </p>
                               <!-- button -->
-                              <a href="team.html" class="btn">Our Team</a>
+                              <a href="team.html" class="btn">Notre Team</a>
                            </div>
                            <!-- /p-4 -->
                         </div>
@@ -311,7 +311,7 @@ export default function Page() {
                <!-- /section-heading -->
                <div class="row">
                   <div class="col-lg-7 ">
-                     <h3>Our Mission</h3>
+                     <h3>Notre Mission</h3>
                      <p class="mt-4 res-margin">Depuis 2012, notre garderie offre un cadre sécuritaire et bienveillant pour les enfants. Notre équipe d’éducatrices qualifiées met un point d’honneur à accompagner chaque enfant dans son développement, en stimulant sa curiosité et son autonomie.</p>
                      <p>Nous croyons en l'importance d'une collaboration étroite avec les parents pour garantir le bien-être de chaque petit. Chez nous, chaque moment est une occasion d'apprendre, de s’amuser et de grandir dans un environnement de confiance et de joie.</p>
                      <a href="/contact" class="btn btn-secondary ">Contactez Nous</a>
@@ -1031,7 +1031,7 @@ Je recommande à 100%!!!
                      <h5>Working Hours</h5>
                      <ul class="list-unstyled mt-3">
                         <li class="mb-1">Lundi au vendredi</li>
-                        <li class="mb-1">Ouvert de 8h à 17h</li>
+                        <li class="mb-1">Ouvert de 7h à 18h</li>
                         <li class="mb-1">Jours fériés – Fermé</li>
                         <li>Fins de semaine – Fermé</li>
                      </ul>

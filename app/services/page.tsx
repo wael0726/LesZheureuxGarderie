@@ -171,7 +171,7 @@ export default function Page() {
                            Nous offrons un milieu chaleureux, sécuritaire et stimulant où chaque enfant peut s’épanouir à son rythme. Nos installations sont conçues pour favoriser le bien-être, l’autonomie et la curiosité naturelle des enfants, tout en respectant les normes d’hygiène et de sécurité.
                         </p>
                         <p>Des activités variées sont proposées selon l’âge : jeux d’éveil et exploration sensorielle pour les poupons, ateliers de motricité, d’arts plastiques, de musique et de lecture pour les plus grands. Chaque journée est pensée pour encourager la créativité, la socialisation et le plaisir d’apprendre.</p>
-                        <p>Nos heures d’ouverture sont du lundi au vendredi, de 8h à 17h.</p>
+                        <p>Nos heures d’ouverture sont du lundi au vendredi, de 7h à 18h.</p>
                         <!-- Button -->	 
                         <a href="contact.html" class="btn btn-quaternary mt-2">Contact us</a>
                      </div>
@@ -367,7 +367,7 @@ Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En gran
       </div>
       <div id="collapseFour" class="collapse" data-bs-parent=".accordion">
         <div class="card-body">
-          <p>Nous sommes ouverts du lundi au vendredi, de 8h00 à 17h00, pour accueillir vos enfants dans un environnement sûr et encadré.</p>
+          <p>Nous sommes ouverts du lundi au vendredi, de 7h00 à 18h00, pour accueillir vos enfants dans un environnement sûr et encadré.</p>
         </div>
       </div>
     </div>
@@ -455,7 +455,7 @@ Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En gran
                      <h5>Working Hours</h5>
                      <ul class="list-unstyled mt-3">
                         <li class="mb-1">Lundi au vendredi</li>
-                        <li class="mb-1">Ouvert de 8h à 17h</li>
+                        <li class="mb-1">Ouvert de 7h à 18h</li>
                         <li class="mb-1">Jours fériés – Fermé</li>
                         <li>Fins de semaine – Fermé</li>
                      </ul>

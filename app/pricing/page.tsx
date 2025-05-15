@@ -360,7 +360,7 @@ export default function Page() {
                      <h5>Working Hours</h5>
                      <ul class="list-unstyled mt-3">
                         <li class="mb-1">Lundi au vendredi</li>
-                        <li class="mb-1">Ouvert de 8h à 17h</li>
+                        <li class="mb-1">Ouvert de 7h à 18h</li>
                         <li class="mb-1">Jours fériés – Fermé</li>
                         <li>Fins de semaine – Fermé</li>
                      </ul>
