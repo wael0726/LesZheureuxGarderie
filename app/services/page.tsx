@@ -149,7 +149,7 @@ export default function Page() {
                   <!-- Breadcrumbs -->
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Services</li>
                      </ol>
                   </nav>
@@ -166,17 +166,18 @@ export default function Page() {
                <div class="container ">
                   <div class="row">
                      <div class="col-lg-7 justify-content-center align-self-center">
-                        <h3><span class="text-secondary">Safe and Healthy</span> learning environment for all children</h3>
+                        <h3><span class="text-secondary">Un environnement d’apprentissage</span> sain et sécuritaire pour tous les enfants</h3>
                         <p>
-                           Quisque at odio nunc. Etiam ac nibh egestas, accumsan felis id, fermentum purus. Quisque vitae hendrerit elit. Maecenas ipsum mi, iaculis quis mattis cursus, auctor ac magna. Integer felis metus, aliquet in dignissim ut, varius et odio. Donec malesuada diam quis dignissim suscipit. Praesent purus turpis, tristique hendrerit
+                           Nous offrons un milieu chaleureux, sécuritaire et stimulant où chaque enfant peut s’épanouir à son rythme. Nos installations sont conçues pour favoriser le bien-être, l’autonomie et la curiosité naturelle des enfants, tout en respectant les normes d’hygiène et de sécurité.
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et ma</p>
+                        <p>Des activités variées sont proposées selon l’âge : jeux d’éveil et exploration sensorielle pour les poupons, ateliers de motricité, d’arts plastiques, de musique et de lecture pour les plus grands. Chaque journée est pensée pour encourager la créativité, la socialisation et le plaisir d’apprendre.</p>
+                        <p>Nos heures d’ouverture sont du lundi au vendredi, de 8h à 17h.</p>
                         <!-- Button -->	 
                         <a href="contact.html" class="btn btn-quaternary mt-2">Contact us</a>
                      </div>
                      <!-- /col-lg -->
                      <div class="col-lg-5 res-margin">
-                        <img src="img/services/serviceimg2.jpg" alt="" class="moving-blob img-fluid">
+                        <img src="img/services/lz21.jpg" alt="" class="moving-blob img-fluid">
                      </div>
                      <!-- /col-lg -->
                   </div>
@@ -192,7 +193,7 @@ export default function Page() {
             </svg>
             <!-- services carousel -->
             <div class="container-fluid bg-primary block-padding pattern2 pt-lg-0">
-               <h2 class="text-light text-center">Our Services</h2>
+               <h2 class="text-light text-center">Nos Services</h2>
                <!-- image  -->
                <div class="container">
                   <div class="carousel-3items owl-carousel owl-theme col-lg-12">
@@ -201,16 +202,16 @@ export default function Page() {
                         <!-- service icon -->
                         <div class="service-icon">
                            <a href="services-single.html">
-                           <img src="img/services/service1.jpg" alt="" class="blob img-fluid">
+                           <img src="img/services/lz20.jpg" alt="" class="blob img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
                            <a href="services-single.html">
-                              <h4 class="service-head">Daycare</h4>
+                              <h4 class="service-head">Garderie</h4>
                            </a>
                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit integer dictum malesuada Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus Etiam rhoncus.
+                              Depuis 2012, notre garderie accueille les enfants dans un cadre chaleureux, sécuritaire et stimulant. Chaque journée est pensée pour favoriser le développement global de l’enfant tout en respectant son rythme et sa personnalité.
                            </p>
                            <!-- Button -->	 
                            <a href="services-single.html" class="btn btn-quaternary  btn-sm mt-2 ml-1">Read More</a>
@@ -221,16 +222,16 @@ export default function Page() {
                         <!-- service icon -->
                         <div class="service-icon">
                            <a href="services-single.html">
-                           <img src="img/services/service2.jpg" alt="" class="blob2 img-fluid">
+                           <img src="img/services/lz18.jpg" alt="" class="blob2 img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
                            <a href="services-single.html">
-                              <h4 class="service-head">Summer Camp</h4>
+                              <h4 class="service-head">Été</h4>
                            </a>
                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit integer dictum malesuada Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus Etiam rhoncus.
+                              Chaque été, nous offrons des activités amusantes et enrichissant pour les enfants. Notre programme est conçu pour stimuler leur curiosité, renforcer leur autonomie et leur permettre de créer de merveilleux souvenirs avec leurs amis.
                            </p>
                            <!-- Button -->	 
                            <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
@@ -241,16 +242,16 @@ export default function Page() {
                         <!-- service icon -->
                         <div class="service-icon">
                            <a href="services-single.html">
-                           <img src="img/services/service3.jpg" alt="" class="blob img-fluid">
+                           <img src="img/services/lz11.webp" alt="" class="blob img-fluid">
                            </a>			   
                         </div>
                         <!-- service content -->
                         <div class="service-content">
                            <a href="services-single.html">
-                              <h4 class="service-head">Infant Care</h4>
+                              <h4 class="service-head">Groupe poupons</h4>
                            </a>
                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit integer dictum malesuada Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus Etiam rhoncus.
+                              Nous offrons un service spécialisé pour les poupons dans un environnement calme, sécuritaire et stimulant. L’accent est mis sur l’attention individuelle, la régularité des routines et le développement sensoriel dès les premiers mois. Conformément aux normes provinciales, nous accueillons jusqu’à 5 poupons, ce qui permet à notre équipe de leur offrir une attention de qualité et un encadrement chaleureux.
                            </p>
                            <!-- Button -->	 
                            <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
@@ -261,16 +262,16 @@ export default function Page() {
                         <!-- service icon -->
                         <div class="service-icon">
                            <a href="services-single.html">
-                           <img src="img/services/service4.jpg" alt="" class="blob2 img-fluid">
+                           <img src="img/services/lz19.jpg" alt="" class="blob2 img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
                            <a href="services-single.html">
-                              <h4 class="service-head">Classes</h4>
+                              <h4 class="service-head">Éducation par groupes</h4>
                            </a>
                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit integer dictum malesuada Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus Etiam rhoncus.
+                              Nous proposons une éducation structurée selon des groupes d’âge, permettant à chaque enfant de progresser à son propre rythme dans un environnement stimulant. Les activités sont adaptées au développement de chaque tranche d’âge.
                            </p>
                            <!-- Button -->	 
                            <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
@@ -281,16 +282,18 @@ export default function Page() {
                         <!-- service icon -->
                         <div class="service-icon">
                            <a href="services-single.html">
-                           <img src="img/services/service5.jpg" alt="" class="blob img-fluid">
+                           <img src="img/services/lz13.jpg" alt="" class="blob img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
                            <a href="services-single.html">
-                              <h4 class="service-head">Activities</h4>
+                              <h4 class="service-head">Activités</h4>
                            </a>
                            <p>
-                              Lorem ipsum dolor sit amet, consectetur adipiscing elit integer dictum malesuada Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus Etiam rhoncus.
+                              Nous offrons un service spécialisé pour les poupons dans un environnement calme, sécuritaire et stimulant. L’attention individuelle, les routines régulières et l’éveil sensoriel sont au cœur de notre approche. Nous accueillons un maximum de 5 poupons, assurant un encadrement de qualité.
+
+Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En grandissant, les activités évoluent vers le dessin, la motricité et la découverte, toujours selon leur rythme.
                            </p>
                            <!-- Button -->	 
                            <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
@@ -306,55 +309,82 @@ export default function Page() {
             <div class="container block-padding">
                <div class="row">
                   <div class="col-lg-6">
-                     <img src="img/services/serviceimg1.jpg" alt="" class="img-fluid rounded">
+                     <img src="img/services/lz24.jpg" alt="" class="img-fluid rounded">
                      <!-- ornament-->
                      <div class="ornament-stars" data-aos="fade-up-right"></div>
                   </div>
                   <div class="col-lg-6 res-margin my-auto">
-                     <h3 class="res-margin">Frequently asked questions</h3>
-                     <div class="accordion mt-5">
-                        <!-- collapsible accordion 1 -->
-                        <div class="card">
-                           <div class="card-header">
-                              <a class="card-link" data-bs-toggle="collapse" href="#collapseOne">
-                              Our Philosophy
-                              </a>
-                           </div>
-                           <!-- /card-header -->
-                           <div id="collapseOne" class="collapse show" data-bs-parent=".accordion">
-                              <div class="card-body">
-                                 <p>Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- /card -->
-                        <!-- collapsible accordion 2 -->
-                        <div class="card">
-                           <div class="card-header">
-                              <a class="collapsed card-link" data-bs-toggle="collapse" href="#collapseTwo">
-                              Our Organization
-                              </a>
-                           </div>
-                           <div id="collapseTwo" class="collapse" data-bs-parent=".accordion">
-                              <div class="card-body">
-                                 <p>Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall Maecenas at arcu risus scelerisque laoree.</p>
-                              </div>
-                           </div>
-                        </div>
-                        <!-- /card -->
-                        <!-- collapsible accordion 3 -->
-                        <div class="card">
-                           <div class="card-header">
-                              <a class="collapsed card-link" data-bs-toggle="collapse" href="#collapseThree">
-                              Partnerships with our team
-                              </a>
-                           </div>
-                           <div id="collapseThree" class="collapse" data-bs-parent=".accordion">
-                              <div class="card-body">
-                                 <p>Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-                              </div>
-                           </div>
-                        </div>
+  <h3 class="res-margin">Questions fréquemment posées</h3>
+  <div class="accordion mt-5">
+    <!-- collapsible accordion 1 -->
+    <div class="card">
+      <div class="card-header">
+        <a class="card-link" data-bs-toggle="collapse" href="#collapseOne">
+          Quelle est votre philosophie éducative ?
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-bs-parent=".accordion">
+        <div class="card-body">
+          <p>Nous croyons en un environnement d’apprentissage sécuritaire et stimulant qui respecte le rythme de chaque enfant, favorise leur autonomie et encourage la créativité et la curiosité naturelle.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /card -->
+    <!-- collapsible accordion 2 -->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-bs-toggle="collapse" href="#collapseTwo">
+          Comment fonctionne votre organisation ?
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" data-bs-parent=".accordion">
+        <div class="card-body">
+          <p>Notre équipe est composée d’éducateurs qualifiés qui travaillent en étroite collaboration avec les parents. Nous offrons un programme adapté selon l’âge des enfants, avec des activités variées et des routines régulières.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /card -->
+    <!-- collapsible accordion 3 -->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-bs-toggle="collapse" href="#collapseThree">
+          Comment se passe la collaboration avec les parents ?
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-bs-parent=".accordion">
+        <div class="card-body">
+          <p>Nous favorisons une communication ouverte et régulière avec les parents via des rencontres, rapports et échanges quotidiens afin d’assurer le bien-être et le développement optimal de chaque enfant.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /card -->
+    <!-- collapsible accordion 4 -->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-bs-toggle="collapse" href="#collapseFour">
+          Quels sont les horaires d’ouverture ?
+        </a>
+      </div>
+      <div id="collapseFour" class="collapse" data-bs-parent=".accordion">
+        <div class="card-body">
+          <p>Nous sommes ouverts du lundi au vendredi, de 8h00 à 17h00, pour accueillir vos enfants dans un environnement sûr et encadré.</p>
+        </div>
+      </div>
+    </div>
+    <!-- /card -->
+    <!-- collapsible accordion 5 -->
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" data-bs-toggle="collapse" href="#collapseFive">
+          Combien d’enfants pouvez-vous accueillir par groupe d’âge ?
+        </a>
+      </div>
+      <div id="collapseFive" class="collapse" data-bs-parent=".accordion">
+        <div class="card-body">
+          <p>Nous respectons les normes provinciales : un maximum de 23 enfants accueillis en tout, avec par exemple une limite de 5 poupons par éducateur dans un environnement calme et sécuritaire, ainsi que des ratios adaptés aux autres groupes d’âge.</p>
+        </div>
+      </div>
+    </div>
                         <!-- /card -->
                      </div>
                      <!-- /accordion -->

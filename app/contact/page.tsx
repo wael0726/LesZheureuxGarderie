@@ -149,7 +149,7 @@ export default function Page() {
                   <!-- Breadcrumbs -->
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Contact</li>
                      </ol>
                   </nav>
@@ -160,66 +160,104 @@ export default function Page() {
             <!-- /container -->
          </div>
          <!-- /jumbotron -->
-         <!-- ==== Page Content ==== -->
-         <div class="page pb-0">
-            <div class="container block-padding">
-               <div class="row">
-                  <div class="col-lg-5 justify-content-center align-self-center text-lg-left text-sm-center text-xs-center">
-                     <h2>Get in Touch</h2>
-                     <span class="h7 mt-0">Contact us today for a quote</span>
-                     <p class="mt-2">Etiam rhoncus leo a dolor placerat, nec elem entum ipsum conval Qui quaerat fugit quas veniam perferendis repudiandae sequi, dolore quisquam illum.</p>
-                     <!-- contact icons-->
-                     <ul class="list-unstyled mt-3 list-contact colored-icons">
-                        <li><i class="fa fa-envelope margin-icon"></i><a href="mailto:email@yoursite.com">email@yoursite.com</a></li>
-                        <li><i class="fa fa-phone margin-icon"></i>(123) 456-789</li>
-                        <li><i class="fa fa-map-marker margin-icon"></i>Street Name 123 - New York</li>
-                     </ul>
-                     <!-- /list-->
-                  </div>
-                  <!-- /col-lg- -->
-                  <!-- contact-info-->
-                  <div class="contact-info col-lg-6 offset-lg-1 res-margin notepad">
-                     <h4>Send us a message</h4>
-                     <!-- Form Starts -->
-                     <div id="contact_form">
-                        <div class="form-group">
-                           <div class="row">
-                              <div class="col-md-6">
-                                 <label>Name<span class="required">*</span></label>
-                                 <input type="text" name="name" class="form-control input-field" required=""> 
-                              </div>
-                              <div class="col-md-6">
-                                 <label>Email Address <span class="required">*</span></label>
-                                 <input type="email" name="email" class="form-control input-field" required=""> 
-                              </div>
-                           </div>
-                           <div class="row">
-                              <div class="col-md-12">
-                                 <label>Subject</label>
-                                 <input type="text" name="subject" class="form-control input-field"> 
-                              </div>
-                              <div class="col-md-12">
-                                 <label>Message<span class="required">*</span></label>
-                                 <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required=""></textarea>
-                              </div>
-                           </div>
-                           <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary">Send message</button>
-                        </div>
-                        <!-- /form-group-->
-                        <!-- Contact results -->
-                        <div id="contact_results"></div>
-                     </div>
-                     <!-- /contact)form-->
-                  </div>
-                  <!-- /contact-info-->
-               </div>
-               <!-- /row -->
+         <!-- ==== Contenu de la page ==== -->
+<div class="page pb-0">
+  <div class="container block-padding">
+    <div class="row">
+      <div class="col-lg-5 justify-content-center align-self-center text-lg-left text-sm-center text-xs-center">
+        <h2>Contactez-nous</h2>
+        <span class="h7 mt-0">Contactez-nous dès aujourd’hui pour un devis</span>
+        <p class="mt-2">
+          Pour toute question ou information, n’hésitez pas à nous contacter. Notre équipe de la garderie Leszheureux est à votre écoute pour vous accompagner au mieux.
+        </p>
+        <!-- icônes contact -->
+        <ul class="list-unstyled mt-3 list-contact colored-icons">
+          <li><i class="fa fa-envelope margin-icon"></i><a href="mailto:Leszheureuxgarderie@gmail.com">Leszheureuxgarderie@gmail.com</a></li>
+          <li><i class="fa fa-phone margin-icon"></i>514-507-4015</li>
+          <li><i class="fa fa-map-marker margin-icon"></i>6001, rue Hochelaga, Montréal, Québec, H1N 1X5</li>
+        </ul>
+        <!-- /liste -->
+      </div>
+      <!-- /col-lg-5 -->
+
+      <!-- Intégration EmailJS -->
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <script type="text/javascript">
+        (function() {
+          // Initialise EmailJS avec ta clé publique
+          emailjs.init("swf70I3j-nFvFNFlH"); // Remplace par ta clé publique EmailJS
+        })();
+      </script>
+
+      <!-- formulaire de contact -->
+      <div class="contact-info col-lg-6 offset-lg-1 res-margin notepad">
+        <h4>Envoyez-nous un message</h4>
+        <form id="contact_form" onsubmit="submitForm(event)">
+          <div class="form-group">
+            <div class="row">
+              <div class="col-md-6">
+                <label>Nom<span class="required">*</span></label>
+                <input type="text" name="name" class="form-control input-field" required>
+              </div>
+              <div class="col-md-6">
+                <label>Adresse courriel <span class="required">*</span></label>
+                <input type="email" name="email" class="form-control input-field" required>
+              </div>
             </div>
-            <!-- /container -->
-            <!-- map-->
-            <div id="map-canvas" class="container-fluid"></div>
-            <!-- /map-->
-         </div>
+            <div class="row">
+              <div class="col-md-12">
+                <label>Sujet</label>
+                <input type="text" name="subject" class="form-control input-field">
+              </div>
+              <div class="col-md-12">
+                <label>Message<span class="required">*</span></label>
+                <textarea name="message" id="message" class="textarea-field form-control" rows="3" required></textarea>
+              </div>
+            </div>
+            <button type="submit" id="submit_btn" class="btn btn-primary mt-3">Envoyer le message</button>
+          </div>
+          <!-- zone d'affichage des résultats -->
+          <div id="contact_results" class="mt-3"></div>
+        </form>
+      </div>
+      <!-- /contact-info -->
+    </div>
+    <!-- /row -->
+  </div>
+  <!-- /container -->
+
+  <!-- carte -->
+  <div id="map-canvas" class="container-fluid"></div>
+  <!-- /carte -->
+</div>
+
+<!-- SCRIPT d'envoi -->
+<script>
+  function submitForm(event) {
+    event.preventDefault();
+
+    // Récupération des valeurs du formulaire
+    const form = document.getElementById('contact_form');
+    const params = {
+      name: form.name.value,
+      email: form.email.value,
+      subject: form.subject.value,
+      message: form.message.value
+    };
+
+    emailjs.send("service_leszheureux", "template_leszheureux", params)
+      .then(function(response) {
+        // Message de succès affiché dans la div dédiée
+        document.getElementById('contact_results').innerHTML = '<p class="text-success">Message envoyé avec succès !</p>';
+        form.reset();
+      }, function(error) {
+        // Message d'erreur affiché dans la div dédiée
+        document.getElementById('contact_results').innerHTML = '<p class="text-danger">Erreur lors de l’envoi du message. Veuillez réessayer.</p>';
+        console.error('Erreur EmailJS:', error);
+      });
+  }
+</script>
          <!-- /page -->
       </div>
       <!--/ page-wrapper -->

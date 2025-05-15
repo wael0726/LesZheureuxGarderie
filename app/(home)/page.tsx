@@ -270,7 +270,7 @@ export default function Page() {
                               Nos éducatrices passionnées et expérimentées s’engagent pleinement dans l’épanouissement de chaque enfant. Elles créent un climat chaleureux et rassurant où chacun se sent valorisé.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
-                           <a href="team.html" class="btn d-lg-none">Our Team</a>
+                           <a href="/team" class="btn d-lg-none">Our Team</a>
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
@@ -314,7 +314,7 @@ export default function Page() {
                      <h3>Our Mission</h3>
                      <p class="mt-4 res-margin">Depuis 2012, notre garderie offre un cadre sécuritaire et bienveillant pour les enfants. Notre équipe d’éducatrices qualifiées met un point d’honneur à accompagner chaque enfant dans son développement, en stimulant sa curiosité et son autonomie.</p>
                      <p>Nous croyons en l'importance d'une collaboration étroite avec les parents pour garantir le bien-être de chaque petit. Chez nous, chaque moment est une occasion d'apprendre, de s’amuser et de grandir dans un environnement de confiance et de joie.</p>
-                     <a href="/contact" class="btn btn-secondary ">Contact us</a>
+                     <a href="/contact" class="btn btn-secondary ">Contactez Nous</a>
                   </div>
                   <!-- /col-lg -->
                   <div class="col-lg-5 res-margin">
@@ -997,7 +997,7 @@ Je recommande à 100%!!!
                                  <div class="input-group">
                                     <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Votre e-mail ici" id="mce-EMAIL">
                                     <span class="input-group-btn">
-                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">S'abonner</button>
                                     </span>
                                  </div>
                                  <!-- Subscription results -->
