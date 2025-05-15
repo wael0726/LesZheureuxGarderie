@@ -12,23 +12,23 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>Prix - Garderie Les Z'Heureux</title>
+        <title>Tarifs - Garderie Les Z'Heureux</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
       <div dangerouslySetInnerHTML={{
   __html: `<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
    <head>
       <meta charset="utf-8">
       <!--[if IE]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <![endif]-->
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="description" content="">
+      <meta name="description" content="Tarifs pour la garderie Les Z'Heureux à Montréal">
       <meta name="author" content="">
       <!-- page title -->
-      <title>ABC Tots</title>
+      <title>Garderie Les Z'Heureux - Tarifs</title>
       <!--[if lt IE 9]>
       <script src="js/respond.js"></script>
       <![endif]-->
@@ -94,7 +94,7 @@ export default function Page() {
                      <ul class="navbar-nav ms-auto">
                         <!-- menu item - Home -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/">Acceuil</a>
+                           <a class="nav-link" href="/">Accueil</a>
                         </li>
                         
                         <!-- menu item - Services -->
@@ -119,7 +119,7 @@ export default function Page() {
                         
                         <!-- menu item - Pricing -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/pricing">Prix</a>
+                           <a class="nav-link" href="/pricing">Tarifs</a>
                         </li>
                         
                         <!-- menu item - Contact -->
@@ -144,13 +144,12 @@ export default function Page() {
          <div class="jumbotron jumbotron-fluid">
             <div class="row d-flex justify-content-center">
                <div class="jumbo-heading" data-aos="fade-down">
-                  <h1>Pricing</h1>
+                  <h1>Nos tarifs</h1>
                   <!-- Breadcrumbs -->
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                        <li class="breadcrumb-item"><a href="about.html">About</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Pricing</li>
+                        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Tarifs</li>
                      </ol>
                   </nav>
                </div>
@@ -163,17 +162,18 @@ export default function Page() {
             <!-- row-->
             <div class="row mb-5">
                <div class="col-lg-5">
-                  <img src="img/about/pricing.jpg" alt="" class="img-fluid rounded d-block mx-auto">
+                  <img src="img/about/lz29.jpg" alt="Enfants jouant à la garderie" class="img-fluid rounded d-block mx-auto">
                </div>
                <!-- /col-lg-->
                <div class="col-lg-7 mt-3">
-                  <h2>Our Rates & Fees </h2>
+                  <h2>Nos tarifs et frais</h2>
                   <p>
-                     Etiam vestibulum sit amet nulla vel ornare. Vestibulum vitae turpis ac sapien pharetra facilisis. Curabitur non libero justo.
-                     <!-- alert-->
+                     À la Garderie Les Z'heureux, nous offrons des tarifs compétitifs adaptés à l'âge de votre enfant. Nous proposons un environnement chaleureux, stimulant et sécuritaire pour le développement de votre enfant, encadré par une équipe qualifiée et attentionnée.
+                  </p>
+                  <!-- alert-->
                   <div class="alert alert-warning mt-3" role="alert">
-                     <h6> Payment information</h6>
-                     <p>Curabitur et quam felis. Nulla rhoncus laoreet dolor, et vestibulum sem consectetur a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt turpis ut sagittis tempor.
+                     <h6>Information de paiement et crédit d'impôt</h6>
+                     <p>Les parents bénéficient de crédits d'impôt pour frais de garde. Avec les versements anticipés de Revenu Québec, vous recevrez des remboursements le 15 de chaque mois pour les frais de garde de votre enfant. N'hésitez pas à nous contacter pour plus d'informations sur ce programme.
                   </div>
                </div>
                <!-- /col-lg-->
@@ -184,25 +184,25 @@ export default function Page() {
                <!-- row -->
                <div class="row">
                   <!-- pricing table 1 -->
-                  <div class="col-lg-4 col-md-12">
+                  <div class="col-lg-6 col-md-12">
                      <div class="pricingTable">
                         <div class="pricingTable-header bg-primary">
-                           <h3 class="title">Daily Plan</h3>
+                           <h3 class="title">Poupons (6-18 mois)</h3>
                         </div>
                         <!-- /pricingTable-header -->
                         <div class="pricing-content bg-primary">
                            <div class="price-value">
-                              <span class="amount">$40</span>
-                              <span class="month">Price per day</span>
+                              <span class="amount">49$</span>
+                              <span class="month">Prix par jour</span>
                            </div>
                            <!-- /price-value -->
                            <ul>
-                              <li>No Contracts</li>
-                              <li>10 hours/day</li>
-                              <li>Drop In</li>
-                              <li>Activities Included</li>
+                              <li>Ratio d'encadrement optimal</li>
+                              <li>Programme éducatif adapté</li>
+                              <li>Repas et collations inclus</li>
+                              <li>Activités de stimulation précoce</li>
                            </ul>
-                           <a href="contact.html" class="btn">Sign Up</a>
+                           <a href="/contact" class="btn">Nous contacter</a>
                         </div>
                         <!-- /pricing content -->
                      </div>
@@ -210,51 +210,25 @@ export default function Page() {
                   </div>
                   <!-- /col-md -->
                   <!-- pricing table 2 -->
-                  <div class="col-lg-4 col-md-12 res-margin">
+                  <div class="col-lg-6 col-md-12 res-margin">
                      <div class="pricingTable">
                         <div class="pricingTable-header bg-secondary">
-                           <h3 class="title">Weekly Plan</h3>
+                           <h3 class="title">Enfants (18 mois et +)</h3>
                         </div>
                         <!-- /pricingTable-header -->
                         <div class="pricing-content bg-secondary">
                            <div class="price-value">
-                              <span class="amount">$200</span>
-                              <span class="month">Price per week</span>
+                              <span class="amount">45$</span>
+                              <span class="month">Prix par jour</span>
                            </div>
                            <!-- /price-value -->
                            <ul>
-                              <li>No Contracts</li>
-                              <li>12 hours/day</li>
-                              <li>Drop In</li>
-                              <li>Activities Included</li>
+                              <li>Programme éducatif complet</li>
+                              <li>Activités variées et enrichissantes</li>
+                              <li>Repas et collations inclus</li>
+                              <li>Préparation à la maternelle</li>
                            </ul>
-                           <a href="contact.html" class="btn">Sign Up</a>
-                        </div>
-                        <!-- /pricing content -->
-                     </div>
-                     <!-- /pricing-table -->
-                  </div>
-                  <!-- /col-md -->
-                  <!-- pricing table 3 -->
-                  <div class="col-lg-4 col-md-12 res-margin">
-                     <div class="pricingTable">
-                        <div class="pricingTable-header bg-tertiary">
-                           <h3 class="title">Monthy Plan</h3>
-                        </div>
-                        <!-- /pricingTable-header -->
-                        <div class="pricing-content bg-tertiary">
-                           <div class="price-value">
-                              <span class="amount">$600</span>
-                              <span class="month">Price per month</span>
-                           </div>
-                           <!-- /price-value -->
-                           <ul>
-                              <li>No registration fee</li>
-                              <li>12 hours/day</li>
-                              <li>Drop In</li>
-                              <li>Activities Included</li>
-                           </ul>
-                           <a href="contact.html" class="btn">Sign Up</a>
+                           <a href="/contact" class="btn">Nous contacter</a>
                         </div>
                         <!-- /pricing content -->
                      </div>
@@ -264,39 +238,54 @@ export default function Page() {
                </div>
                <!-- /row  -->
             </div>
-            <!-- /col-lg-12 -->   <!-- row -->
+            <!-- /col-lg-12 -->   
+            
+            <!-- row -->
             <div class="col-lg-12 mt-5">
-               <h4>Administrative charges</h4>
+               <h4>Crédit d'impôt pour frais de garde</h4>
                <p>
-                  Etiam vestibulum sit amet nulla vel ornare. Vestibulum vitae turpis ac sapien pharetra facilisis. Curabitur non libero justo. Suspendisse at ultrices velit. Quisque aliquet quis nibh sed feugiat. Curabitur et quam felis. Nulla rhoncus laoreet dolor, et vestibulum sem consectetur a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tincidunt turpis ut sagittis tempor.
-                  <!-- table -->
-               <table class="table table-striped">
+                  Les frais de garde d'enfants vous donnent droit à un crédit d'impôt remboursable de Revenu Québec. Ce crédit peut représenter jusqu'à 75 % de vos frais de garde admissibles, selon votre revenu familial.
+               </p>
+               <p>
+                  Avec les versements anticipés, vous n'avez pas à attendre votre déclaration de revenus pour bénéficier de ce crédit. Revenu Québec peut vous verser des paiements le 15 de chaque mois directement dans votre compte bancaire.
+               </p>
+               <p>
+                  Pour bénéficier de ces versements anticipés, vous devez en faire la demande auprès de Revenu Québec. Nous pouvons vous aider à remplir le formulaire nécessaire et vous fournir les reçus de frais de garde requis.
+               </p>
+               <!-- table -->
+               <table class="table table-striped mt-4">
                   <thead>
                      <tr>
-                        <th>Ages</th>
-                        <th>Fee Type</th>
-                        <th>Value</th>
+                        <th>Type de service</th>
+                        <th>Tarif journalier</th>
+                        <th>Crédit d'impôt potentiel</th>
                      </tr>
                   </thead>
                   <tbody>
                      <tr>
-                        <td>12months to 2 years</td>
-                        <td>Registration fee (one time only)</td>
-                        <td>$40</td>
+                        <td>Poupons (6-18 mois)</td>
+                        <td>49$</td>
+                        <td>Jusqu'à 75% selon le revenu familial</td>
                      </tr>
                      <tr>
-                        <td>2 years to 8 years</td>
-                        <td>Registration fee (one time only)</td>
-                        <td>$20</td>
-                     </tr>
-                     <tr>
-                        <td>8 years to 12 years</td>
-                        <td>Registration fee (one time only)</td>
-                        <td>$20</td>
+                        <td>Enfants (18 mois et +)</td>
+                        <td>45$</td>
+                        <td>Jusqu'à 75% selon le revenu familial</td>
                      </tr>
                   </tbody>
                </table>
                <!-- /table-->
+               
+               <div class="alert alert-info mt-4" role="alert">
+                  <h6>Documentation requise pour l'inscription</h6>
+                  <ul>
+                     <li>Certificat de naissance de l'enfant</li>
+                     <li>Carnet de vaccination à jour</li>
+                     <li>Carte d'assurance maladie</li>
+                     <li>Coordonnées en cas d'urgence</li>
+                     <li>Informations sur les allergies ou besoins particuliers</li>
+                  </ul>
+               </div>
             </div>
             <!-- /col-lg-12-->
          </div>
@@ -326,7 +315,7 @@ export default function Page() {
                                  <div class="input-group">
                                     <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Votre e-mail ici" id="mce-EMAIL">
                                     <span class="input-group-btn">
-                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">S'abonner</button>
                                     </span>
                                  </div>
                                  <!-- Subscription results -->
@@ -345,11 +334,11 @@ export default function Page() {
                   </div>
                   <!--/ col-lg -->
                   <div class="col-lg-4 text-center res-margin">
-                     <h5>Contactez Nous</h5>
+                     <h5>Contactez-nous</h5>
                      <ul class="list-unstyled mt-3">
                         <li class="mb-1"><i class="fas fa-phone margin-icon "></i>514-507-4015</li>
                         <li class="mb-1"><i class="fas fa-envelope margin-icon"></i><a href="mailto:Leszheureuxgarderie@gmail.com">Leszheureuxgarderie@gmail.com</a></li>
-                        <li><i class="fas fa-map-marker margin-icon"></i>6001, rue Hochelaga, Montréal. Québec, H1N 1X5 </li>
+                        <li><i class="fas fa-map-marker margin-icon"></i>6001, rue Hochelaga, Montréal, Québec, H1N 1X5 </li>
                      </ul>
                      <!--/ul -->
                      <!-- Start Social Links -->
@@ -357,7 +346,7 @@ export default function Page() {
                   </div>
                   <!--/ col-lg -->
                   <div class="col-lg-4 text-center">
-                     <h5>Working Hours</h5>
+                     <h5>Heures d'ouverture</h5>
                      <ul class="list-unstyled mt-3">
                         <li class="mb-1">Lundi au vendredi</li>
                         <li class="mb-1">Ouvert de 7h à 18h</li>
@@ -371,6 +360,9 @@ export default function Page() {
                <!--/ row-->
                <hr>
                <div class="row">
+                  <div class="col-lg-12 text-center">
+                     <p>© 2025 Garderie Les Z'heureux. Tous droits réservés.</p>
+                  </div>
                </div>
                <!--/row-->
             </div>

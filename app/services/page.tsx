@@ -119,7 +119,7 @@ export default function Page() {
                         
                         <!-- menu item - Pricing -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/pricing">Prix</a>
+                           <a class="nav-link" href="/pricing">Tarifs</a>
                         </li>
                         
                         <!-- menu item - Contact -->
