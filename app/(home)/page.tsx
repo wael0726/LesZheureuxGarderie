@@ -755,7 +755,7 @@ Je recommande à 100%!!!
                            <i class="counter-icon flaticon-children"></i>
                            <!-- insert your final value on data-count= -->
                            <div class="counter-value" data-count="104">0</div>
-                           <h3 class="title">Kids</h3>
+                           <h3 class="title">Enfants</h3>
                         </div>
                      </div>
                      <!-- /counter -->

@@ -173,7 +173,7 @@ export default function Page() {
                         <p>Des activités variées sont proposées selon l’âge : jeux d’éveil et exploration sensorielle pour les poupons, ateliers de motricité, d’arts plastiques, de musique et de lecture pour les plus grands. Chaque journée est pensée pour encourager la créativité, la socialisation et le plaisir d’apprendre.</p>
                         <p>Nos heures d’ouverture sont du lundi au vendredi, de 7h à 18h.</p>
                         <!-- Button -->	 
-                        <a href="contact.html" class="btn btn-quaternary mt-2">Contact us</a>
+                        <a href="/contact" class="btn btn-quaternary mt-2">Contactez Nous</a>
                      </div>
                      <!-- /col-lg -->
                      <div class="col-lg-5 res-margin">
@@ -201,93 +201,93 @@ export default function Page() {
                      <div class="serviceBox2">
                         <!-- service icon -->
                         <div class="service-icon">
-                           <a href="services-single.html">
+                           <a href="/">
                            <img src="img/services/lz20.jpg" alt="" class="blob img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
-                           <a href="services-single.html">
+                           <a href="/">
                               <h4 class="service-head">Garderie</h4>
                            </a>
                            <p>
                               Depuis 2012, notre garderie accueille les enfants dans un cadre chaleureux, sécuritaire et stimulant. Chaque journée est pensée pour favoriser le développement global de l’enfant tout en respectant son rythme et sa personnalité.
                            </p>
                            <!-- Button -->	 
-                           <a href="services-single.html" class="btn btn-quaternary  btn-sm mt-2 ml-1">Read More</a>
+                           <a href="/contact" class="btn btn-quaternary  btn-sm mt-2 ml-1">En Savoir Plus</a>
                         </div>
                      </div>
                      <!-- service 2  -->
                      <div class="serviceBox2">
                         <!-- service icon -->
                         <div class="service-icon">
-                           <a href="services-single.html">
+                           <a href="/">
                            <img src="img/services/lz18.jpg" alt="" class="blob2 img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
-                           <a href="services-single.html">
+                           <a href="/">
                               <h4 class="service-head">Été</h4>
                            </a>
                            <p>
                               Chaque été, nous offrons des activités amusantes et enrichissant pour les enfants. Notre programme est conçu pour stimuler leur curiosité, renforcer leur autonomie et leur permettre de créer de merveilleux souvenirs avec leurs amis.
                            </p>
                            <!-- Button -->	 
-                           <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
+                           <a href="/contact" class="btn btn-quaternary btn-sm mt-2 ml-1">En Savoir Plus</a>
                         </div>
                      </div>
                      <!-- service 3  -->
                      <div class="serviceBox2">
                         <!-- service icon -->
                         <div class="service-icon">
-                           <a href="services-single.html">
+                           <a href="/">
                            <img src="img/services/lz11.webp" alt="" class="blob img-fluid">
                            </a>			   
                         </div>
                         <!-- service content -->
                         <div class="service-content">
-                           <a href="services-single.html">
+                           <a href="/">
                               <h4 class="service-head">Groupe poupons</h4>
                            </a>
                            <p>
                               Nous offrons un service spécialisé pour les poupons dans un environnement calme, sécuritaire et stimulant. L’accent est mis sur l’attention individuelle, la régularité des routines et le développement sensoriel dès les premiers mois. Conformément aux normes provinciales, nous accueillons jusqu’à 5 poupons, ce qui permet à notre équipe de leur offrir une attention de qualité et un encadrement chaleureux.
                            </p>
                            <!-- Button -->	 
-                           <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
+                           <a href="/contact" class="btn btn-quaternary btn-sm mt-2 ml-1">En Savoir Plus</a>
                         </div>
                      </div>
                      <!-- service 4  -->
                      <div class="serviceBox2">
                         <!-- service icon -->
                         <div class="service-icon">
-                           <a href="services-single.html">
+                           <a href="/">
                            <img src="img/services/lz19.jpg" alt="" class="blob2 img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
-                           <a href="services-single.html">
+                           <a href="/">
                               <h4 class="service-head">Éducation par groupes</h4>
                            </a>
                            <p>
                               Nous proposons une éducation structurée selon des groupes d’âge, permettant à chaque enfant de progresser à son propre rythme dans un environnement stimulant. Les activités sont adaptées au développement de chaque tranche d’âge.
                            </p>
                            <!-- Button -->	 
-                           <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
+                           <a href="/contact" class="btn btn-quaternary btn-sm mt-2 ml-1">En Savoir Plus</a>
                         </div>
                      </div>
                      <!-- service 5 -->
                      <div class="serviceBox2">
                         <!-- service icon -->
                         <div class="service-icon">
-                           <a href="services-single.html">
+                           <a href="/">
                            <img src="img/services/lz13.jpg" alt="" class="blob img-fluid">
                            </a>
                         </div>
                         <!-- service content -->
                         <div class="service-content">
-                           <a href="services-single.html">
+                           <a href="/">
                               <h4 class="service-head">Activités</h4>
                            </a>
                            <p>
@@ -296,7 +296,7 @@ export default function Page() {
 Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En grandissant, les activités évoluent vers le dessin, la motricité et la découverte, toujours selon leur rythme.
                            </p>
                            <!-- Button -->	 
-                           <a href="services-single.html" class="btn btn-quaternary btn-sm mt-2 ml-1">Read More</a>
+                           <a href="/contact" class="btn btn-quaternary btn-sm mt-2 ml-1">En Savoir Plus</a>
                         </div>
                      </div>
                   </div>
@@ -339,7 +339,7 @@ Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En gran
       </div>
       <div id="collapseTwo" class="collapse" data-bs-parent=".accordion">
         <div class="card-body">
-          <p>Notre équipe est composée d’éducateurs qualifiés qui travaillent en étroite collaboration avec les parents. Nous offrons un programme adapté selon l’âge des enfants, avec des activités variées et des routines régulières.</p>
+          <p>Notre équipe est composée d’éducatrices qualifiés qui travaillent en étroite collaboration avec les parents. Nous offrons un programme adapté selon l’âge des enfants, avec des activités variées et des routines régulières.</p>
         </div>
       </div>
     </div>
@@ -381,7 +381,7 @@ Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En gran
       </div>
       <div id="collapseFive" class="collapse" data-bs-parent=".accordion">
         <div class="card-body">
-          <p>Nous respectons les normes provinciales : un maximum de 23 enfants accueillis en tout, avec par exemple une limite de 5 poupons par éducateur dans un environnement calme et sécuritaire, ainsi que des ratios adaptés aux autres groupes d’âge.</p>
+          <p>Nous respectons les normes provinciales : un maximum de 23 enfants accueillis en tout, avec par exemple une limite de 5 poupons par éducatrice dans un environnement calme et sécuritaire, ainsi que des ratios adaptés aux autres groupes d’âge.</p>
         </div>
       </div>
     </div>
@@ -421,7 +421,7 @@ Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En gran
                                  <div class="input-group">
                                     <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Votre e-mail ici" id="mce-EMAIL">
                                     <span class="input-group-btn">
-                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">S'abonner</button>
                                     </span>
                                  </div>
                                  <!-- Subscription results -->
