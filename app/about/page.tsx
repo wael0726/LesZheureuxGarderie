@@ -493,7 +493,7 @@ parents au plus tard le 15 juin et le 15 décembre de chaque année.
                                  <div class="input-group">
                                     <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Votre e-mail ici" id="mce-EMAIL">
                                     <span class="input-group-btn">
-                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">S'abonner</button>
                                     </span>
                                  </div>
                                  <!-- Subscription results -->

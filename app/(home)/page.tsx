@@ -196,7 +196,7 @@ export default function Page() {
                               Notre garderie est entièrement accréditée, ce qui garantit un environnement sécuritaire et conforme aux normes les plus strictes. Vous pouvez avoir l’esprit tranquille en nous confiant votre enfant.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
-                           <a href="contact.html" class="btn d-lg-none">Contactez Nous</a>
+                           <a href="/contact" class="btn d-lg-none">Contactez Nous</a>
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
@@ -233,7 +233,7 @@ export default function Page() {
                               Nous offrons un programme éducatif axé sur le jeu et adapté à l’âge, qui stimule la curiosité et favorise le développement global de l’enfant à son rythme.
                            </p>
                            <!-- button show on mobile only,where flip is disabled -->
-                           <a href="services.html" class="btn d-lg-none">Nos Services</a>
+                           <a href="/services" class="btn d-lg-none">Nos Services</a>
                         </div>
                         <!-- /p-5 -->
                         <!-- image -->
@@ -285,7 +285,7 @@ export default function Page() {
                               <p class="card-text">Nos éducatrices sont non seulement expérimentées, mais également dévouées à créer une atmosphère bienveillante et inspirante. Elles sont présentes pour guider chaque enfant, en les accompagnant dans leurs découvertes quotidiennes avec une attention particulière.
                               </p>
                               <!-- button -->
-                              <a href="team.html" class="btn">Notre Team</a>
+                              <a href="/team" class="btn">Notre Équipe</a>
                            </div>
                            <!-- /p-4 -->
                         </div>

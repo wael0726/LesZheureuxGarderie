@@ -149,7 +149,7 @@ export default function Page() {
                   <!-- Breadcrumbs -->
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="index.html">Acceuil</a></li>
+                        <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Contact</li>
                      </ol>
                   </nav>
@@ -168,7 +168,7 @@ export default function Page() {
         <h2>Contactez-nous</h2>
         <span class="h7 mt-0">Contactez-nous dès aujourd’hui pour un devis</span>
         <p class="mt-2">
-          Pour toute question ou information, n’hésitez pas à nous contacter. Notre équipe de la garderie Leszheureux est à votre écoute pour vous accompagner au mieux.
+          Pour toute question ou information, n’hésitez pas à nous contacter. Notre équipe de la garderie Les Z'heureux est à votre écoute pour vous accompagner au mieux.
         </p>
         <!-- icônes contact -->
         <ul class="list-unstyled mt-3 list-contact colored-icons">
@@ -284,7 +284,7 @@ export default function Page() {
                                  <div class="input-group">
                                     <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Votre e-mail ici" id="mce-EMAIL">
                                     <span class="input-group-btn">
-                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
+                                    <button class="btn btn-tertiary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">S'abonner</button>
                                     </span>
                                  </div>
                                  <!-- Subscription results -->
