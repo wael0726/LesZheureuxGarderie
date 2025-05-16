@@ -94,7 +94,7 @@ export default function Page() {
                      <ul class="navbar-nav ms-auto">
                         <!-- menu item - Home -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/">Acceuil</a>
+                           <a class="nav-link" href="/">Accueil</a>
                         </li>
                         
                         <!-- menu item - Services -->

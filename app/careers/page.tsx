@@ -94,7 +94,7 @@ export default function Page() {
                      <ul class="navbar-nav ms-auto">
                         <!-- menu item - Home -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/">Acceuil</a>
+                           <a class="nav-link" href="/">Accueil</a>
                         </li>
                         
                         <!-- menu item - Services -->
@@ -149,7 +149,7 @@ export default function Page() {
                   <!-- Breadcrumbs -->
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Acceuil</a></li>
+                        <li class="breadcrumb-item"><a href="/">Accueil</a></li>
                         <li class="breadcrumb-item active" aria-current="page">Carrières</li>
                      </ol>
                   </nav>

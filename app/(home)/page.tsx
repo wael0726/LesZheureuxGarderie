@@ -12,7 +12,7 @@ export default function Page() {
    return (
       <>
          <Head>
-            <title>Acceuil - Garderie Les Z'Heureux</title>
+            <title>Accueil - Garderie Les Z'Heureux</title>
             <meta charSet="UTF-8" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          </Head>
@@ -94,7 +94,7 @@ export default function Page() {
                      <ul class="navbar-nav ms-auto">
                         <!-- menu item - Home -->
                         <li class="nav-item">
-                           <a class="nav-link" href="/">Acceuil</a>
+                           <a class="nav-link" href="/">Accueil</a>
                         </li>
                         
                         <!-- menu item - Services -->
