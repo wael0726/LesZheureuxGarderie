@@ -17,18 +17,18 @@ export default function Page() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
          </Head>
          <div dangerouslySetInnerHTML={{
-            __html: `<!DOCTYPE html>
-<html lang="en">
+  __html: `<!DOCTYPE html>
+<html lang="fr">
    <head>
       <meta charset="utf-8">
       <!--[if IE]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <![endif]-->
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="description" content="">
+      <meta name="description" content="Découvrez notre approche nutritionnelle à la Garderie Les Z'Heureux : repas équilibrés selon le Guide alimentaire canadien, gestion des allergies et menus adaptés aux besoins des enfants.">
       <meta name="author" content="">
       <!-- page title -->
-      <title>ABC Tots</title>
+      <title>Alimentation - Garderie Les Z'Heureux</title>
       <!--[if lt IE 9]>
       <script src="js/respond.js"></script>
       <![endif]-->
@@ -110,6 +110,11 @@ export default function Page() {
                         <!-- menu item - Our Team -->
                         <li class="nav-item">
                            <a class="nav-link" href="/team">Notre équipe</a>
+                        </li>
+                        
+                        <!-- menu item - Alimentation -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/alimentation">Alimentation</a>
                         </li>
                         
                         <!-- menu item - Careers -->
@@ -640,7 +645,7 @@ Je recommande à 100%!!!
                                     <h3>Groupe poupons</h3>
 <p>Nous offrons un service spécialisé pour les poupons dans un environnement calme, sécuritaire et stimulant. L’accent est mis sur l’attention individuelle, la régularité des routines et le développement sensoriel dès les premiers mois.</p>
 <ul class="custom ps-0">
-   <li>Accueil des enfants dès 3 mois</li>
+   <li>Accueil des enfants dès 6 mois</li>
    <li>Éducatrices attentives à chaque besoin</li>
    <li>Activités simples : éveil musical, manipulation, exploration douce</li>
 </ul>

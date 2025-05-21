@@ -18,17 +18,17 @@ export default function Page() {
       </Head>
       <div dangerouslySetInnerHTML={{
   __html: `<!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
    <head>
       <meta charset="utf-8">
       <!--[if IE]>
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <![endif]-->
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="description" content="">
+      <meta name="description" content="Découvrez notre approche nutritionnelle à la Garderie Les Z'Heureux : repas équilibrés selon le Guide alimentaire canadien, gestion des allergies et menus adaptés aux besoins des enfants.">
       <meta name="author" content="">
       <!-- page title -->
-      <title>ABC Tots</title>
+      <title>Alimentation - Garderie Les Z'Heureux</title>
       <!--[if lt IE 9]>
       <script src="js/respond.js"></script>
       <![endif]-->
@@ -110,6 +110,11 @@ export default function Page() {
                         <!-- menu item - Our Team -->
                         <li class="nav-item">
                            <a class="nav-link" href="/team">Notre équipe</a>
+                        </li>
+                        
+                        <!-- menu item - Alimentation -->
+                        <li class="nav-item">
+                           <a class="nav-link" href="/alimentation">Alimentation</a>
                         </li>
                         
                         <!-- menu item - Careers -->
@@ -381,7 +386,7 @@ Les plus jeunes profitent de jeux d’éveil et de moments de tendresse. En gran
       </div>
       <div id="collapseFive" class="collapse" data-bs-parent=".accordion">
         <div class="card-body">
-          <p>Nous respectons les normes provinciales : un maximum de 23 enfants accueillis en tout, avec par exemple une limite de 5 poupons par éducatrice dans un environnement calme et sécuritaire, ainsi que des ratios adaptés aux autres groupes d’âge.</p>
+          <p>Nous respectons le ratio du ministère de la famille avec un maximum de 23 enfants accueillis en tout, avec par exemple une limite de 5 poupons par éducatrice dans un environnement calme et sécuritaire, ainsi que des ratios adaptés aux autres groupes d’âge.</p>
         </div>
       </div>
     </div>

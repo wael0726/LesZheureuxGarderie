@@ -12,7 +12,7 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>Notre Équipe - Garderie Les Z'Heureux</title>
+        <title>Alimentation - Garderie Les Z'Heureux</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Head>
@@ -150,12 +150,12 @@ export default function Page() {
             <div class="row d-flex justify-content-center">
                <!-- jumbo-heading -->
                <div class="jumbo-heading" data-aos="fade-down">
-                  <h1>Notre Équipe</h1>
+                  <h1>Alimentation</h1>
                   <!-- Breadcrumbs -->
                   <nav aria-label="breadcrumb">
                      <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Accueil</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Notre Équipe</li>
+                        <li class="breadcrumb-item active" aria-current="page">Alimentation</li>
                      </ol>
                   </nav>
                   <!-- /breadcrumb -->
@@ -170,73 +170,30 @@ export default function Page() {
             <div class="container block-padding">
                <div class="row">
                   <div class="col-lg-12 text-center">
-                     <h2 class="mb-4">Une équipe passionnée au service de vos enfants</h2>
-                     <p class="lead">Notre équipe se compose de professionnelles qualifiées et passionnées qui s'engagent à offrir un environnement stimulant, sécuritaire et chaleureux pour les enfants de notre garderie.</p>
+                     <h2 class="mb-4">Une alimentation saine et équilibrée pour nos petits</h2>
+                     <p class="lead">À la Garderie Les Z'Heureux, nous accordons une importance primordiale à l'alimentation des enfants. Notre approche nutritionnelle est basée sur le Guide alimentaire canadien et vise à offrir des repas équilibrés, savoureux et adaptés aux besoins de chaque enfant.</p>
                      <div class="spacer-2"></div>
                   </div>
                </div>
 
-               <!-- Section Notre équipe éducative -->
+               <!-- Section Guide alimentaire canadien -->
                <div class="row">
                   <div class="col-lg-12">
-                     <div class="bg-light pattern2 p-4 rounded team-box">
-                        <h3 class="mb-3 text-primary">Notre équipe d'éducatrices</h3>
+                     <div class="bg-light pattern2 p-4 rounded nutrition-box">
+                        <h3 class="mb-3 text-primary">
+                           <i class="fas fa-leaf text-success me-2"></i>
+                           Guide alimentaire canadien
+                        </h3>
                         <div class="row">
-                           <div class="col-md-6">
-                              <p><strong>Éducatrices du groupe des poupons (0-18 mois)</strong></p>
-                              <p>Une éducatrice pour les poupons est diplômée en techniques d'éducation à l'enfance et formée spécifiquement pour l'éveil des tout-petits. Elle apporte douceur et sécurité aux plus jeunes enfants, avec une connaissance approfondie du développement des nourrissons.</p>
+                           <div class="col-md-8">
+                              <p>Nous suivons rigoureusement les recommandations du Guide alimentaire canadien pour assurer une nutrition optimale à tous les enfants de notre garderie. Cette approche garantit que chaque repas contient les éléments essentiels à leur croissance et développement.</p>
+                              <p>Nos menus sont conçus pour inclure une variété d'aliments des quatre groupes alimentaires principaux, en privilégiant les aliments frais, locaux et de saison autant que possible.</p>
                            </div>
-                        </div>
-                        <div class="row mt-4">
-                           <div class="col-md-6">
-                              <p><strong>Éducatrice du groupe des 2-3 ans</strong></p>
-                              <p> Notre éducatrice propose des activités créatives variées qui stimulent l'imagination des enfants. Son approche ludique permet d'aborder les prémices de l'apprentissage académique.</p>
-                           </div>
-                           <div class="col-md-6">
-                              <p><strong>Éducatrice du groupe des 4-5 ans</strong></p>
-                              <p>Spécialiste de la préparation à la maternelle, notre éducatrice accompagne les enfants dans leur dernière année à la garderie. Son programme riche en activités cognitives, motrices et sociales prépare efficacement les enfants à leur entrée à l'école.</p>
-                           </div>
-                        </div>
-                        <div class="row mt-4">
-                           <div class="col-md-6">
-                              <p><strong>Éducatrice de soutien et remplaçante</strong></p>
-                              <p>Polyvalente et expérimentée, notre éducatrice de soutien intervient auprès de tous les groupes d'âge selon les besoins. Elle apporte son expertise lors des activités spéciales, des sorties et assure la continuité pédagogique lors des absences.</p>
-                           </div>
-                           <div class="col-md-6">
-                              <p><strong>Éducatrice spécialisée en besoins particuliers</strong></p>
-                              <p>Formée pour accompagner les enfants ayant des besoins spécifiques, notre éducatrice spécialisée travaille en collaboration avec l'équipe pour assurer l'inclusion et le développement optimal de chaque enfant, quelles que soient ses particularités.</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-                  
-               <!-- Formation et approche -->
-               <div class="row mt-5">
-                  <div class="col-lg-12">
-                     <div class="bg-secondary text-light p-4 rounded">
-                        <h3 class="mb-3">Notre approche éducative</h3>
-                        <p>Toute notre équipe adhère à une philosophie éducative basée sur le programme éducatif québécois "Accueillir la petite enfance". Nous croyons fermement au développement global de l'enfant à travers:</p>
-                        <div class="row mt-3">
-                           <div class="col-md-4">
-                              <div class="feature-box bg-primary text-white p-3 rounded">
-                                 <i class="flaticon-brain-2 text-light"></i>
-                                 <h5 class="mt-3">Développement cognitif</h5>
-                                 <p>Activités stimulantes qui favorisent la réflexion, la curiosité et l'acquisition de connaissances.</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="feature-box bg-tertiary text-white p-3 rounded">
-                                 <i class="flaticon-dance text-light"></i>
-                                 <h5 class="mt-3">Développement physique</h5>
-                                 <p>Jeux et activités qui développent la motricité fine et globale ainsi que la coordination.</p>
-                              </div>
-                           </div>
-                           <div class="col-md-4">
-                              <div class="feature-box bg-info text-white p-3 rounded">
-                                 <i class="flaticon-friendship text-light"></i>
-                                 <h5 class="mt-3">Développement social</h5>
-                                 <p>Interactions qui favorisent le partage, la coopération et le respect des autres.</p>
+                           <div class="col-md-4 text-center">
+                              <div class="food-icon-container">
+                                 <i class="fas fa-apple-alt text-danger" style="font-size: 3rem;"></i>
+                                 <i class="fas fa-carrot text-warning mx-3" style="font-size: 3rem;"></i>
+                                 <i class="fas fa-bread-slice text-warning" style="font-size: 3rem;"></i>
                               </div>
                            </div>
                         </div>
@@ -244,18 +201,116 @@ export default function Page() {
                   </div>
                </div>
 
-               <!-- Formation continue -->
+               <!-- Section Repas équilibrés -->
+               <div class="row mt-5">
+                  <div class="col-lg-12">
+                     <div class="bg-secondary text-light p-4 rounded">
+                        <h3 class="mb-3">
+                           <i class="fas fa-balance-scale text-light me-2"></i>
+                           Repas équilibrés et sains
+                        </h3>
+                        <p>Nos repas sont soigneusement planifiés pour être nutritifs et équilibrés, sans excès de sucre ou de sel. Nous privilégions les saveurs naturelles des aliments et évitons les produits transformés.</p>
+                        <div class="row mt-3">
+                           <div class="col-md-4">
+                              <div class="feature-box bg-primary text-white p-3 rounded">
+                                 <i class="fas fa-apple-alt text-light" style="font-size: 2rem;"></i>
+                                 <h5 class="mt-3">Fruits et légumes</h5>
+                                 <p>Variété de fruits et légumes frais à chaque repas pour les vitamines et minéraux essentiels.</p>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="feature-box bg-tertiary text-white p-3 rounded">
+                                 <i class="fas fa-fish text-light" style="font-size: 2rem;"></i>
+                                 <h5 class="mt-3">Protéines</h5>
+                                 <p>Sources variées de protéines : poisson, volaille, légumineuses et produits laitiers.</p>
+                              </div>
+                           </div>
+                           <div class="col-md-4">
+                              <div class="feature-box bg-info text-white p-3 rounded">
+                                 <i class="fas fa-seedling text-light" style="font-size: 2rem;"></i>
+                                 <h5 class="mt-3">Grains entiers</h5>
+                                 <p>Céréales complètes et grains entiers pour l'énergie et les fibres nécessaires.</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Section Gestion des allergies -->
+               <div class="row mt-5">
+                  <div class="col-lg-12">
+                     <div class="bg-warning text-dark p-4 rounded allergy-box">
+                        <h3 class="mb-3">
+                           <i class="fas fa-shield-alt text-danger me-2"></i>
+                           Gestion des allergies alimentaires
+                        </h3>
+                        <div class="row">
+                           <div class="col-md-8">
+                              <p><strong>Sécurité avant tout :</strong> Nous prenons très au sérieux toutes les allergies alimentaires. Chaque allergie est documentée et communiquée à toute l'équipe.</p>
+                              <ul class="mt-3">
+                                 <li>Plans d'action individualisés pour chaque enfant allergique</li>
+                                 <li>Formation du personnel sur la reconnaissance et la gestion des réactions allergiques</li>
+                                 <li>Séparation stricte des aliments allergènes lors de la préparation</li>
+                                 <li>Étiquetage clair de tous les repas et collations</li>
+                                 <li>Communication régulière avec les parents</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-4 text-center">
+                              <div class="alert-icons">
+                                 <i class="fas fa-exclamation-triangle text-danger" style="font-size: 3rem;"></i>
+                                 <p class="mt-2"><small>Vigilance constante pour la sécurité de tous</small></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Section Menus affichés -->
+               <div class="row mt-5">
+                  <div class="col-lg-12">
+                     <div class="bg-light p-4 rounded menu-display-box">
+                        <h3 class="mb-3 text-primary">
+                           <i class="fas fa-calendar-alt text-primary me-2"></i>
+                           Menus hebdomadaires affichés
+                        </h3>
+                        <div class="row">
+                           <div class="col-md-8">
+                              <p>Les menus de la semaine sont affichés bien en vue dans notre garderie pour que les parents puissent s'informer des repas servis à leurs enfants.</p>
+                              <p><strong>Vous y trouverez :</strong></p>
+                              <ul>
+                                 <li>Le menu complet de la semaine (déjeuner, dîner, collations)</li>
+                                 <li>Les ingrédients principaux de chaque plat</li>
+                                 <li>Les allergènes présents (clairement identifiés)</li>
+                                 <li>Les alternatives pour les enfants avec restrictions alimentaires</li>
+                                 <li>Les informations nutritionnelles pertinentes</li>
+                              </ul>
+                           </div>
+                           <div class="col-md-4 text-center">
+                              <div class="menu-icons">
+                                 <i class="fas fa-utensils text-success" style="font-size: 2.5rem;"></i>
+                                 <i class="fas fa-clipboard-list text-primary mx-3" style="font-size: 2.5rem;"></i>
+                                 <i class="fas fa-eye text-info" style="font-size: 2.5rem;"></i>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Section Nos principes -->
                <div class="row mt-5">
                   <div class="col-lg-12 text-center">
-                     <h3>Perfectionnement professionnel</h3>
-                     <p>Nos éducatrices suivent régulièrement des formations pour améliorer leurs compétences et se tenir informées des meilleures pratiques en éducation préscolaire.</p>
+                     <h3>Nos principes alimentaires</h3>
+                     <p>Voici ce qui guide notre approche nutritionnelle au quotidien</p>
                      <ul class="list-inline mt-4">
-                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1">Premiers soins et RCR</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1">Gestion des comportements</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1">Intervention précoce</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1">Pédagogie par le jeu</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1">Intégration des arts</span></li>
-                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1">Éveil à la lecture</span></li>
+                        <li class="list-inline-item"><span class="badge bg-success p-2 m-1"><i class="fas fa-ban me-1"></i>Pas de sucre ajouté</span></li>
+                        <li class="list-inline-item"><span class="badge bg-success p-2 m-1"><i class="fas fa-ban me-1"></i>Faible en sel</span></li>
+                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1"><i class="fas fa-leaf me-1"></i>Aliments frais</span></li>
+                        <li class="list-inline-item"><span class="badge bg-primary p-2 m-1"><i class="fas fa-home me-1"></i>Fait maison</span></li>
+                        <li class="list-inline-item"><span class="badge bg-info p-2 m-1"><i class="fas fa-heart me-1"></i>Avec amour</span></li>
+                        <li class="list-inline-item"><span class="badge bg-warning p-2 m-1"><i class="fas fa-users me-1"></i>Adapté à tous</span></li>
                      </ul>
                   </div>
                </div>
@@ -264,9 +319,9 @@ export default function Page() {
                <div class="row mt-5">
                   <div class="col-lg-12">
                      <div class="bg-tertiary text-light p-5 rounded text-center pattern1">
-                        <h3>Envie de nous rencontrer?</h3>
-                        <p class="lead">Venez visiter notre garderie et découvrir notre équipe chaleureuse en personne!</p>
-                        <a href="/contact" class="btn btn-primary btn-lg mt-3">Prendre rendez-vous</a>
+                        <h3>Des questions sur l'alimentation?</h3>
+                        <p class="lead">N'hésitez pas à nous contacter pour discuter des besoins alimentaires spécifiques de votre enfant!</p>
+                        <a href="/contact" class="btn btn-primary btn-lg mt-3">Nous contacter</a>
                      </div>
                   </div>
                </div>
@@ -367,12 +422,12 @@ export default function Page() {
       <script src="js/prefixfree.min.js"></script>
       
       <style>
-         .team-box {
+         .nutrition-box, .allergy-box, .menu-display-box {
             margin-bottom: 20px;
             height: 100%;
             transition: all 0.3s ease;
          }
-         .team-box:hover {
+         .nutrition-box:hover, .allergy-box:hover, .menu-display-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
          }
@@ -381,6 +436,33 @@ export default function Page() {
          }
          .feature-box:hover {
             transform: translateY(-5px);
+         }
+         .food-icon-container i {
+            margin: 0 10px;
+            animation: bounce 2s infinite;
+         }
+         .food-icon-container i:nth-child(2) {
+            animation-delay: 0.3s;
+         }
+         .food-icon-container i:nth-child(3) {
+            animation-delay: 0.6s;
+         }
+         @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+               transform: translateY(0);
+            }
+            40% {
+               transform: translateY(-10px);
+            }
+            60% {
+               transform: translateY(-5px);
+            }
+         }
+         .menu-icons i, .alert-icons i {
+            transition: all 0.3s ease;
+         }
+         .menu-icons i:hover, .alert-icons i:hover {
+            transform: scale(1.1);
          }
       </style>
    </body>
