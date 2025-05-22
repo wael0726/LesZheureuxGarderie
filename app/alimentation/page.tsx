@@ -222,7 +222,7 @@ export default function Page() {
                               <div class="feature-box bg-tertiary text-white p-3 rounded">
                                  <i class="fas fa-fish text-light" style="font-size: 2rem;"></i>
                                  <h5 class="mt-3">Protéines</h5>
-                                 <p>Sources variées de protéines : poisson, volaille, légumineuses et produits laitiers.</p>
+                                 <p>Sources variées de protéines : viande, poisson, volaille, tofu, légumineuses et produits laitiers.</p>
                               </div>
                            </div>
                            <div class="col-md-4">
